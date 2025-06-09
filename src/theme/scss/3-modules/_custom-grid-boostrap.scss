@@ -1,0 +1,56 @@
+.container {
+    padding: 0 rem(23px);
+
+    @include media-breakpoint-up(md) {
+        max-width: 90%;
+        padding: 0 rem(20px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 97%;
+        padding: 0 rem(20px);
+    }
+}
+
+.row {
+    margin-left: rem(-4px);
+    margin-right: rem(-4px);
+
+    [class*='col-'] {
+        padding-left: rem(4px);
+        padding-right: rem(4px);
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-left: rem(-7px);
+        margin-right: rem(-7px);
+    
+        [class*='col-'] {
+            padding-left: rem(7px);
+            padding-right: rem(7px);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-left: rem(-20px);
+        margin-right: rem(-20px);
+    
+        [class*='col-'] {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+        }
+    }
+}
+
+.fancybox__iframe {
+    // width: 80%;
+
+    @include media-breakpoint-up(md) {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 80%;
+    }
+}

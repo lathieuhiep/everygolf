@@ -1,0 +1,209 @@
+input, textarea, select {
+    &:focus {
+        outline: none;
+    }
+}
+
+// input[type="search"],
+// input[type="text"],
+// input[type="url"],
+// input[type="number"],
+// input[type="password"],
+// input[type="email"],
+// input[type="file"],
+// input[type="number"],
+// input[type="date"],
+// select,
+// textarea,
+// .ui-selectmenu-text,
+// input.form-control,
+// textarea.form-control,
+// .fieldinput,
+// .select-custom .ss-main {
+//     height: rem(48px);
+//     line-height: rem(48px);
+//     width: 100%;
+// }
+
+// select {
+//     background: none;
+//     appearance: none;
+
+//     option {
+//         color: $color-primary;
+//     }
+// }
+
+// input[type="search"],
+// input[type="text"],
+// input[type="url"],
+// input[type="number"],
+// input[type="password"],
+// input[type="email"],
+// input[type="file"],
+// input[type="date"] {
+//     -webkit-appearance: none;
+//     appearance: none;
+// }
+
+// input[type=number]::-webkit-outer-spin-button,
+// input[type=number]::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
+
+// input[type=number] {
+//     -moz-appearance: textfield;
+// }
+
+textarea {
+    line-height: 1.5;
+    min-height: rem(120px);
+    padding-top: rem(18px) !important;
+    padding-bottom: rem(18px) !important;
+    resize: none;
+
+    @include media-breakpoint-up(xl) {
+        min-height: rem(100px);
+    }
+}
+
+.ss-main:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ss-content {
+    .ss-list {
+        .ss-option {
+            @include media-breakpoint-up(xxxl) {
+                font-size: rem(22px);
+                padding: rem(10px) rem(10px);
+            }
+        }
+    }
+}
+
+.checkbox {
+    display: block;
+    cursor: pointer;
+
+    input {
+        display: none;
+
+        &:checked ~ {
+            p {
+                span {
+                    background-color: var(--bs-heading-color);
+                }
+            }
+        } 
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: rem(14px);
+        font-weight: 400;
+        line-height: 1.37;
+
+        span  {
+            position: relative;
+            width: rem(24px);
+            height: rem(24px);
+            border-radius: rem(4px);
+            border: 1px solid var(--bs-heading-color);
+            margin-right: rem(8px);
+
+            &:after {
+                content: '\e90c';
+                font-family: 'lejardin';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                font-size: 1.2em;
+                color: #fff;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: rem(16px);
+        }
+    }
+}
+
+.form-item {
+    label {
+        display: block;
+        font-family: var(--bs-heading-font-family2);
+        font-size: rem(14px);
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: rem(8px);
+    }
+
+    .form-control {
+        width: 100%;
+        height: rem(50px);
+        background-color: #070507;
+        border-radius: rem(10px);
+        border: 1px solid rgba(13, 9, 13, 0.40);
+        font-family: var(--bs-heading-font-family2);
+        font-size: rem(16px);
+        font-weight: 400;
+        color: #fff;
+        padding: 0 rem(16px);
+
+        @include placeholder {
+            color: rgba(255, 255, 255, 0.40);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        label {
+            font-size: rem(18px);
+        }
+
+        .form-control {
+            height: rem(60px);
+            font-size: rem(18px);
+            border-radius: rem(16px);
+            padding: 0 rem(16px);
+        }
+    }
+}
+
+.form-wrap {
+    .form-group {
+        margin-bottom: rem(20px);
+    }
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: rem(-14px);
+        margin-right: rem(-14px);
+
+        .form-group,
+        .form-button {
+            width: 100%;
+            padding: 0 rem(14px);
+
+            &.ww-50 {
+                width: 50%;
+            }
+        }
+
+        .form-group {
+            margin-bottom: rem(28px);
+        }
+    }
+}

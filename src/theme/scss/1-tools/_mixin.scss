@@ -1,0 +1,41 @@
+@mixin placeholder {
+	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+	@each $placeholder in $placeholders {
+		&:#{$placeholder}-placeholder {
+			@content;
+		}
+	}
+}
+
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin text-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	@content;
+}
+
+@mixin list-style($value: none) {
+	list-style: $value;
+	@if ($value == 'none') {
+		margin: 0;
+		padding: 0;
+	}
+	@content;
+}
+
+@mixin absoluteFull {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	@content;
+}

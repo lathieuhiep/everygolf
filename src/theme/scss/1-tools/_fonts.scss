@@ -1,0 +1,55 @@
+$font-path: "../fonts";
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-PoppinsBold.woff2') format('woff2'),
+      url('#{$font-path}/SVN-Poppins/SVN-PoppinsBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-PoppinsBlack.woff2') format('woff2'),
+      url('.#{$font-path}/SVN-Poppins/SVN-PoppinsBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-PoppinsLight.woff2') format('woff2'),
+      url('#{$font-path}/SVN-Poppins/SVN-PoppinsLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-PoppinsSemiBold.woff2') format('woff2'),
+      url('#{$font-path}/SVN-Poppins/SVN-PoppinsSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-Poppins.woff2') format('woff2'),
+      url('#{$font-path}/SVN-Poppins/SVN-Poppins.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Poppins';
+  src: url('#{$font-path}/SVN-Poppins/SVN-PoppinsMedium.woff2') format('woff2'),
+      url('#{$font-path}/SVN-Poppins/SVN-PoppinsMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

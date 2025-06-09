@@ -1,0 +1,145 @@
+.footer {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+  background-color: #000508;
+
+  .item-wrap {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 15%;
+      background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  .item-bg {
+    aspect-ratio: 1920 / 1215;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .item-backtotop {
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    bottom: rem(100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(80px);
+    height: rem(80px);
+    font-size: rem(30px);
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+
+    &:hover {
+      transform: translateX(-50%) scale(1.2);
+    }
+  }
+
+  .item-footer {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: rem(25px);
+    right: 0;
+
+    ul {
+      @include list-style;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        font-size: rem(12px);
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        letter-spacing: 2.88px;
+        text-transform: uppercase;
+        color: #fff;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: var(--color-primary);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-between(md,xl) {
+    .item-wrap {
+      padding-top: rem(30px);
+    }
+
+    .item-bg {
+      margin-left: -5%;
+      margin-right: -7%;
+    }
+
+    .item-backtotop {
+      bottom: rem(100px);
+      width: rem(50px);
+      height: rem(50px);
+      font-size: rem(20px);
+    }
+
+    .item-footer {
+      ul {
+        flex-wrap: wrap;
+        margin-left: rem(-5px);
+        margin-right: rem(-5px);
+
+        li {
+          padding: rem(5px);
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .item-wrap {
+      padding-top: rem(50px);
+    }
+
+    .item-bg {
+      margin-left: -15%;
+      margin-right: -19%;
+    }
+
+    .item-backtotop {
+      bottom: rem(60px);
+      width: rem(40px);
+      height: rem(40px);
+      font-size: rem(15px);
+    }
+
+    .item-footer {
+      ul {
+        justify-content: center;
+
+        li:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -58,7 +58,7 @@ const paths = {
 
 // server
 // tạo file .env với biến PROXY="localhost/blank-wp". Có thể thay đổi giá trị này.
-const proxy = process.env.PROXY || "localhost/blank-wp";
+const proxy = process.env.PROXY || "localhost/everygolf";
 
 function server() {
     browserSync.init({
@@ -72,7 +72,7 @@ function server() {
 // Task build theme
 // css
 function buildStyleTheme() {
-    return src(`${paths.theme.scss}style-main.scss`)
+    return src(`${paths.theme.scss}main.scss`)
         .pipe(plumber({
             errorHandler: function (err) {
                 console.error('SCSS Style Theme Error:', err.message);
@@ -175,7 +175,7 @@ async function buildAll() {
     await buildStyleTheme()
     await buildStylePageTemplate()
 
-    await buildJSTheme()
+    // await buildJSTheme()
 }
 exports.buildAll = buildAll
 
@@ -185,13 +185,14 @@ function watchTask() {
 
     // theme watch
     watch([
-        `${paths.theme.scss}style-main.scss`,
+        `!${paths.theme.scss}page-templates/*.scss`,
+        `${paths.theme.scss}main.scss`,
     ], buildStyleTheme)
 
     watch([
         `${paths.theme.scss}page-templates/*.scss`
     ], buildStylePageTemplate)
 
-    watch([`${paths.theme.js}*.js`], buildJSTheme)
+    // watch([`${paths.theme.js}*.js`], buildJSTheme)
 }
 exports.watchTask = watchTask

@@ -1,0 +1,139 @@
+.swiper-buttonCustom {
+
+}
+
+.swiper-buttonCustom-prev,
+.swiper-buttonCustom-next {
+    width: rem(40px);
+    height: rem(40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bs-heading-color);
+    border-radius: 50%;
+    font-size: rem(16px);
+    color: var(--bs-heading-color);
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: var(--bs-heading-color);
+        color: #fff;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: rem(55px);
+        height: rem(55px);
+        font-size: rem(18px);
+    }
+
+
+    &.swiper-button-disabled {
+        background-color: #FFFDF9;
+        pointer-events: none;
+        opacity: .5;
+    }
+} 
+
+.swiper-buttonCustom.style-1 {
+    display: flex;
+    align-items: center;
+
+    .swiper-buttonCustom-next {
+        margin-left: rem(10px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        .swiper-buttonCustom-next {
+            margin-left: rem(20px);
+        }
+    }
+}
+
+.swiper-buttonCustom.style-2 {
+    .swiper-buttonCustom-prev,
+    .swiper-buttonCustom-next {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+
+    .swiper-buttonCustom-prev {
+        left: rem(15px);
+    }
+
+    .swiper-buttonCustom-next {
+        right: rem(15px);
+    }
+}
+
+.swiper-pagination {
+    position: static;
+    line-height: 1;
+    font-size: 0;
+    margin-top: rem(30px);
+
+    .swiper-pagination-bullet {
+        width: rem(8px);
+        height: rem(8px);
+        border-radius: 50%;
+        background-color: #8B8B8B;
+        opacity: .6;
+        transition: all .3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-primary);
+        opacity: 1;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-top: rem(45px);
+
+        .swiper-pagination-bullet {
+            width: rem(10px);
+            height: rem(10px);
+            margin: 0 rem(9px) !important;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: rem(60px);
+    }
+
+}
+
+.swiper-btn-group {
+    .swiper-btn-prev,
+    .swiper-btn-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(30px);
+        height: rem(30px);
+        border: 1px solid #000;
+        border-radius: rem(8px);
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        &.swiper-button-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: rem(40px);
+            height: rem(40px);
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: rem(48px);
+            height: rem(48px);
+        }
+    }
+}

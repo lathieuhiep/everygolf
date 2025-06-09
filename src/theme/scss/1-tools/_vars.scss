@@ -1,0 +1,63 @@
+$rem-baseline: 16px !default;
+
+$font-body : var(--bs-body-font-family), sans-serif !default;
+$font-heading: var(--bs-heading-font-family), sans-serif !default;
+$font-secondary: $font-heading !default;
+
+$font-size-body: 1.125rem !default;
+$font-weight-body: 493 !default;
+$light-height-body: 1.62 !default;
+$color-body: rgba(27, 27, 27, 0.75) !default;
+
+$color-heading: #212A2F !default;
+$font-weight-heading: bold !default;
+$line-height-heading: 1.2 !default;
+
+$color-primary : #EF5268 !default;
+$color-secondary: #008B67 !default;
+$color-gray: #DCDDD1 !default;
+
+/* boostrap*/
+$font-family-base: $font-body;
+$font-size-base: $font-size-body !default;
+$font-weight-base: $font-weight-body !default;
+$line-height-base: $light-height-body !default;
+$body-color: $color-body !default;
+$body-bg : #fff !default;
+
+
+/* boostrap*/
+$headings-font-family:        $font-heading !default;
+$headings-font-weight:        $font-weight-heading !default;
+$headings-line-height:        $line-height-heading !default;
+$headings-color:              $color-heading !default;
+
+
+/* boostrap*/
+$link-color:                              $color-heading !default;
+$link-decoration:                         none !default;
+$enable-smooth-scroll:        false !default;
+
+$h1-font-size: $font-size-base * 3.14 !default;
+$h2-font-size: $font-size-base * 2.3 !default;
+$h3-font-size: $font-size-base * 2 !default;
+$h4-font-size: $font-size-base * 1.71 !default;
+$h5-font-size: $font-size-base * 1.43 !default;
+$h6-font-size: $font-size-base * 1.14 !default;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1160px,
+  xxl: 1300px,
+) !default;
