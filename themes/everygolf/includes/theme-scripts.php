@@ -32,16 +32,44 @@ add_action('wp_enqueue_scripts', 'everygolf_remove_wp_block_library_css', 100);
 // Enqueue scripts and styles
 function everygolf_enqueue_scripts(): void
 {
+    // enqueue icon every-golf
+    wp_enqueue_style('everygolf-style', get_theme_file_uri('/assets/fonts/everygolf-v1.0/style.css'), array(), wp_get_theme()->get('Version'));
+
+    // enqueue style libs
+    wp_enqueue_style('swiper-style', get_theme_file_uri('/assets/lib/swiper/swiper.min.css'), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('slimselect-style', get_theme_file_uri('/assets/lib/slimselect/slimselect.css'), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('fancybox-style', get_theme_file_uri('/assets/lib/fancybox/fancybox.css'), array(), wp_get_theme()->get('Version'));
+
     // enqueue style
-    wp_enqueue_style('main-style', get_theme_file_uri('/assets/css/style-main.min.css'), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('main-style', get_theme_file_uri('/assets/css/main.min.css'), array(), wp_get_theme()->get('Version'));
 
     // enqueue style page 404
     if (is_404()) {
         wp_enqueue_style('page-404', get_theme_file_uri('/assets/css/page-templates/page-404.min.css'), array(), wp_get_theme()->get('Version'));
     }
 
-    // enqueue script
-    wp_enqueue_script('theme-main', get_theme_file_uri('/assets/js/theme-main.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+    // enqueue script libs
+    wp_enqueue_script('lenis-script', get_theme_file_uri('/assets/lib/lenis/lenis.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('wow-script', get_theme_file_uri('/assets/lib/wow/wow.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('slimselect-script', get_theme_file_uri('/assets/lib/slimselect/slimselect.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('greensock-script', get_theme_file_uri('/assets/lib/greensock/GSAP.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+    wp_enqueue_script('ScrollTrigger-script', get_theme_file_uri('/assets/lib/greensock/ScrollTrigger.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+    wp_enqueue_script('TextPlugin-script', get_theme_file_uri('/assets/lib/greensock/TextPlugin.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+    wp_enqueue_script('SplitText-script', get_theme_file_uri('/assets/lib/greensock/SplitText.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('headroom-script', get_theme_file_uri('/assets/lib/headroom/headroom.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('swiper-script', get_theme_file_uri('/assets/lib/swiper/swiper.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('fancyBox-script', get_theme_file_uri('/assets/lib/fancyBox/fancybox.umd.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    wp_enqueue_script('mouse-follower-script', get_theme_file_uri('/assets/lib/mouse-follower/mouse-follower.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
+
+    // enqueue main script
+    wp_enqueue_script('functions-script', get_theme_file_uri('/assets/js/functions.js'), array('jquery'), wp_get_theme()->get('Version'), true);
 
     // Enqueue comment-reply script if needed
     if (is_singular() && comments_open() && get_option('thread_comments')) {

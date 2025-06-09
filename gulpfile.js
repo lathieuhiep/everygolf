@@ -186,6 +186,7 @@ function watchTask() {
     // theme watch
     watch([
         `!${paths.theme.scss}page-templates/*.scss`,
+        `${paths.theme.scss}**/*.scss`,
         `${paths.theme.scss}main.scss`,
     ], buildStyleTheme)
 

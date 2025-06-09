@@ -29,15 +29,8 @@ function everygolf_register_required_plugins(): void
 
         // This is an example of how to include a plugin from the WordPress Plugin Repository
         array(
-            'name' => 'Elementor',
-            'slug' => 'elementor',
-            'required' => true,
-        ),
-
-        // This is an example of how to include a plugin from the WordPress Plugin Repository
-        array(
-            'name' => 'Breadcrumb Navxt',
-            'slug' => 'breadcrumb-navxt',
+            'name' => 'Polylang',
+            'slug' => 'polylang',
             'required' => true,
         ),
 

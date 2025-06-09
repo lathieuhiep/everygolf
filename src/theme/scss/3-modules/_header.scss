@@ -71,14 +71,16 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         border-bottom: 2px solid transparent;
-        
-        &.is-active {
-          border-color: #DCFC5A;
-        }
 
-        &.is-active,
         &:hover {
           color: #fff;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          color: #fff;
+          border-color: #DCFC5A;
         }
       }
     }
@@ -245,8 +247,8 @@
       height: rem(56px);
 
       img {
-        width: 70%;
-        height: 70%;
+        width: 70% !important;
+        height: 70% !important;
       }
     }
   }

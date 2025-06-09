@@ -65,6 +65,14 @@ body {
   @include media-breakpoint-down(md) {
     font-size: rem(14px);
   }
+
+  &.admin-bar {
+    .page-wrapper {
+      .header__wrap {
+        top: 32px;
+      }
+    }
+  }
 }
 
 .body-load-done {

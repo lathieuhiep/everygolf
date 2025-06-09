@@ -5701,6 +5701,9 @@ body::-webkit-scrollbar {
     font-size: 0.875rem;
   }
 }
+body.admin-bar .page-wrapper .header__wrap {
+  top: 32px;
+}
 
 .body-load-done {
   opacity: 1;
@@ -10952,11 +10955,12 @@ textarea {
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
 }
-.header__nav .menu-list li a.is-active {
-  border-color: #DCFC5A;
-}
-.header__nav .menu-list li a.is-active, .header__nav .menu-list li a:hover {
+.header__nav .menu-list li a:hover {
   color: #fff;
+}
+.header__nav .menu-list li.current-menu-item a {
+  color: #fff;
+  border-color: #DCFC5A;
 }
 
 .header__grow {
@@ -11092,8 +11096,8 @@ textarea {
     height: 3.5rem;
   }
   .header__lang .select-lang__label img {
-    width: 70%;
-    height: 70%;
+    width: 70% !important;
+    height: 70% !important;
   }
 }
 @media (max-width: 1199.98px) {
