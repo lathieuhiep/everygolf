@@ -35,5 +35,5 @@ if ( class_exists( 'CSF' ) ) {
     require get_theme_file_path( '/includes/theme-options/general-options.php' );
 
     // menu options
-    require get_theme_file_path( '/includes/theme-options/menu-options.php' );
+    require get_theme_file_path( '/includes/theme-options/footer-options.php' );
 }

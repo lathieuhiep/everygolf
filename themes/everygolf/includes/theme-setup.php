@@ -28,7 +28,8 @@ function everygolf_setup(): void
     register_nav_menus(
         array(
             'main_menu' => esc_html__( 'Menu chính', 'everygolf' ),
-            'main_mobile_menu' => esc_html__( 'Menu chính (Mobile)', 'everygolf' )
+            'main_mobile_menu' => esc_html__( 'Menu chính (Mobile)', 'everygolf' ),
+            'footer_menu' => esc_html__( 'Menu chân trang', 'everygolf' )
         )
     );
 
