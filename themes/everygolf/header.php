@@ -14,7 +14,7 @@
 <div class="page-wrapper"> <!-- open div class page-wrapper  -->
     <?php
     if ( !is_404() ) :
-        get_template_part('components/loading');
+        get_template_part('components/inc', 'loading');
 
-        get_template_part('components/header');
+        get_template_part('components/header/layout');
     endif; ?>

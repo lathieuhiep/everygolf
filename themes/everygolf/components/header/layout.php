@@ -2,15 +2,13 @@
     <div class="header__wrap">
         <div class="header__content">
             <!-- main logo -->
-            <?php get_template_part( 'components/main-logo' ); ?>
+            <?php get_template_part('components/header/logo'); ?>
 
             <!-- Main Menu -->
             <?php
-            wp_nav_menu( array(
-                'theme_location' => 'main_menu',
-                'container_class'=> 'header__nav',
-                'menu_class'     => 'menu-list',
-            ) );
+            if ( !wp_is_mobile() ) :
+                get_template_part('components/header/nav');
+            endif;
             ?>
 
             <div class="header__grow"></div>
@@ -18,7 +16,8 @@
             <div class="header__right">
                 <?php
                 $contact_page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-contact.php' );
-                    if ( $contact_page ) :
+
+                if ( $contact_page ) :
                 ?>
                     <a href="<?php echo esc_url( $contact_page['url'] ) ?>" class="header__contact">
                         <?php echo esc_html( $contact_page['title'] ); ?>
@@ -26,7 +25,7 @@
                 <?php endif; ?>
 
                 <!-- language selection -->
-                <?php get_template_part( 'components/lang-switcher' ); ?>
+                <?php get_template_part('components/header/lang', 'switcher'); ?>
 
                 <div class="header__humberger d-xl-none">
                     <span class="t-1"></span>
@@ -47,14 +46,8 @@
 </header>
 
 <!-- Mobile Menu -->
-<div class="menuMobile d-xl-none">
-    <div class="menuMobile__inner">
-        <?php
-        wp_nav_menu( array(
-            'theme_location' => 'main_mobile_menu',
-            'container_class'=> 'menuMobile__nav',
-            'menu_class'     => 'menu-list',
-        ) );
-        ?>
-    </div>
-</div>
+<?php
+if ( wp_is_mobile() ) :
+    get_template_part('components/header/nav', 'mobile');
+endif;
+?>
