@@ -15,7 +15,8 @@ require get_parent_theme_file_path( '/includes/theme-hooks.php' );
 require get_parent_theme_file_path( '/includes/theme-sidebar.php' );
 require get_parent_theme_file_path( '/includes/theme-functions.php' );
 
-// Required: Theme options
+// Required: Theme Options
 require get_theme_file_path( '/includes/theme-options.php' );
 
-require get_parent_theme_file_path( '/includes/meta-boxes/page-mb.php' );
+// Required: Theme Meta Boxes
+require get_parent_theme_file_path( '/includes/theme-meta-boxes.php' );

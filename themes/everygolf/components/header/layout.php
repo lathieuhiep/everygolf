@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header header--transparent">
     <div class="header__wrap">
         <div class="header__content">
             <!-- main logo -->

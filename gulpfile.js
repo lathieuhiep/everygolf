@@ -45,14 +45,6 @@ const paths = {
             js: `themes/${themeName}/assets/js/`,
             libs: `themes/${themeName}/assets/libs/`,
         },
-        plugins: {
-            root: 'plugins/',
-            efa: {
-                css: `plugins/${pluginNameEFA}/assets/css/`,
-                js: `plugins/${pluginNameEFA}/assets/js/`,
-                libs: `plugins/${pluginNameEFA}/assets/libs/`
-            }
-        }
     }
 };
 
@@ -186,6 +178,7 @@ function watchTask() {
     // theme watch
     watch([
         `!${paths.theme.scss}page-templates/*.scss`,
+        `!${paths.theme.scss}elementor-addons/*.scss`,
         `${paths.theme.scss}**/*.scss`,
         `${paths.theme.scss}main.scss`,
     ], buildStyleTheme)

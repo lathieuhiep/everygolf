@@ -31,3 +31,12 @@ function everygolf_get_page_link_info_by_template_file( $template_slug ): bool|a
     return false;
 }
 
+// Link Pages
+function everygolf_link_page(): void {
+    wp_link_pages( array(
+        'before'      => '<div class="page-links">' . esc_html__( 'Trang:', 'everygolf' ),
+        'after'       => '</div>',
+        'link_before' => '<span class="page-number">',
+        'link_after'  => '</span>',
+    ) );
+}
