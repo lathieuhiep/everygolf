@@ -1,5 +1,5 @@
 <?php
-$slides = get_post_meta( get_the_ID(), 'cmb_page_home_hero_slides', true );
+$slides = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_HERO . 'slides', true );
 
 if ( empty( $slides ) ) return false;
 ?>

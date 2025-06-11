@@ -1,24 +1,21 @@
 <?php
-$cmb_page_home_group_hero = new_cmb2_box(array(
-    'id' => 'cmb_page_home_group_hero',
+$cmb_page_home_hero_group = new_cmb2_box(array(
+    'id' => PREFIX_CMB_PAGE_HOME_HERO . 'group',
     'title' => esc_html__('Khối: Hero', 'everygolf'),
     'object_types' => array('page'),
-    'desc' => esc_html__('Nhóm tùy chỉnh này sẽ hiển thị trên trang Home.', 'everygolf'),
-    'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array(
-        'page-templates/page-home.php'
-    )),
+    'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array(template_home)),
 ));
 
-$cmb_page_home_group_hero->add_field(array(
+$cmb_page_home_hero_group->add_field(array(
     'name' => esc_html__('Danh sách slide', 'everygolf'),
-    'id' => 'cmb_page_home_hero_slides',
+    'id' => PREFIX_CMB_PAGE_HOME_HERO . 'slides',
     'type' => 'group',
     'repeatable' => true,
     'sortable' => true,
     'options' => [
         'group_title' => 'Slide {#}',
-        'add_button' => esc_html__('Thêm slide', 'everygolf'),
-        'remove_button' => esc_html__('Xóa slide', 'everygolf'),
+        'add_button' => esc_html__('Thêm', 'everygolf'),
+        'remove_button' => esc_html__('Xóa', 'everygolf'),
         'sortable' => true,
         'closed' => true,
     ],

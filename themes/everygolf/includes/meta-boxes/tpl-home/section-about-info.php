@@ -1,23 +1,21 @@
 <?php
-$cmb_page_home_group_about_info = new_cmb2_box(array(
-    'id' => 'cmb_page_home_group_about_info',
+$cmb_page_home_about_info_group = new_cmb2_box(array(
+    'id' => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'group',
     'title' => esc_html__('Khối: Thông tin', 'everygolf'),
     'object_types' => array('page'),
-    'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array(
-        'page-templates/page-home.php'
-    )),
+    'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array(template_home)),
 ));
 
 // section display
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name' => esc_html__('Phần 1: Hiển thị', 'everygolf'),
     'type' => 'title',
-    'id'   => 'cmb_page_home_about_info_section_display',
+    'id'   => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'section_display',
 ) );
 
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name' => esc_html__('Tiêu đề', 'everygolf'),
-    'id'   => 'cmb_page_home_about_info_title',
+    'id'   => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'title',
     'type' => 'textarea',
     'sanitization_cb' => false,
     'escape_cb' => false,
@@ -29,9 +27,9 @@ $cmb_page_home_group_about_info->add_field( array(
     ),
 ) );
 
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name' => esc_html__('Mô tả', 'everygolf'),
-    'id'   => 'cmb_page_home_about_info_desc',
+    'id'   => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'desc',
     'type' => 'textarea',
     'sanitization_cb' => false,
     'escape_cb' => false,
@@ -44,15 +42,15 @@ $cmb_page_home_group_about_info->add_field( array(
 ) );
 
 // section hyperlinks
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name' => esc_html__('Phần 2: Liên kết', 'everygolf'),
     'type' => 'title',
-    'id'   => 'cmb_page_home_about_info_section_hyperlinks',
+    'id'   => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'section_hyperlinks',
 ) );
 
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name' => esc_html__('Tiêu đề liên kết', 'everygolf'),
-    'id'   => 'cmb_page_home_about_info_text_hyperlinks',
+    'id'   => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'text_hyperlinks',
     'type' => 'text',
     'default' => esc_html__('Tìm hiểu', 'everygolf'),
     'attributes' => array(
@@ -60,9 +58,9 @@ $cmb_page_home_group_about_info->add_field( array(
     ),
 ) );
 
-$cmb_page_home_group_about_info->add_field( array(
+$cmb_page_home_about_info_group->add_field( array(
     'name'    => esc_html__('Liên kết đến trang', 'everygolf'),
-    'id'      => 'cmb_page_home_about_info_page_link',
+    'id'      => PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'page_link',
     'type'    => 'select',
     'options' => wp_list_pluck( get_pages(), 'post_title', 'ID' ),
     'placeholder' => esc_html__('Chọn một trang...', 'everygolf'),

@@ -1,9 +1,9 @@
 <?php
-$title = get_post_meta( get_the_ID(), 'cmb_page_home_about_info_title', true );
-$desc = get_post_meta( get_the_ID(), 'cmb_page_home_about_info_desc', true );
+$title = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'title', true );
+$desc = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'desc', true );
 
-$text_hyperlinks = get_post_meta( get_the_ID(), 'cmb_page_home_about_info_text_hyperlinks', true );
-$page_id = get_post_meta( get_the_ID(), 'cmb_page_home_about_info_page_link', true );
+$text_hyperlinks = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'text_hyperlinks', true );
+$page_id = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_ABOUT_INFO . 'page_link', true );
 ?>
 <section class="section sec-aboutInfo">
     <div class="item-wrap">
