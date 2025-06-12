@@ -18,3 +18,5 @@
 
         get_template_part('components/header/layout');
     endif; ?>
+
+    <main class="page-content">

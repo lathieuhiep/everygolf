@@ -1,6 +1,4 @@
 <?php
-// File: /your-theme/inc/custom-fields.php
-
 add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_page_home');
 
 function everygolf_register_custom_fields_for_page_home(): void

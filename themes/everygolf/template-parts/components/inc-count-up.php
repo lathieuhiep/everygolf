@@ -1,9 +1,14 @@
 <?php
-$numbers = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_NUMBERS . 'list', true );
+if ( empty( $args['prefix_cmb'] ) ) return;
+$prefix_cmb = $args['prefix_cmb'];
+
+$numbers = get_post_meta( get_the_ID(), $prefix_cmb . 'list', true );
 
 if ( empty( $numbers ) ) return false;
+
+$class = $args['class'] ? ' ' . $args['class'] : '';
 ?>
-<section class="section sec-homeNumber">
+<section class="section sec-homeNumber<?php echo esc_attr( $class ); ?>">
     <div class="container">
         <div class="item-content">
             <div class="row">

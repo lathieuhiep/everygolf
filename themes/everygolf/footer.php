@@ -1,3 +1,5 @@
+    </main> <!-- close main class page-content -->
+
     <?php
     if ( !is_404() ) :
         $copyright_default = esc_html__( 'Copyright @ 2025 Everygolf', 'everygolf' );
@@ -37,8 +39,12 @@
             </div>
         </footer>
     <?php endif; ?>
-</div> <!-- close div class page-wrapper  -->
+</div> <!-- close div class page-wrapper -->
 
-<?php wp_footer(); ?>
+<?php
+get_template_part( 'components/inc', 'chat-box' );
+
+wp_footer();
+?>
 </body>
 </html>
