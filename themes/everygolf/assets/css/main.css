@@ -12352,17 +12352,19 @@ textarea {
     margin-bottom: 12.1875rem;
   }
 }
-.sec-indoorSpace .item-content .col-md-6:last-child .item-box {
-  margin-top: 1.875rem;
-}
 @media (min-width: 768px) {
-  .sec-indoorSpace .item-content .col-md-6:last-child .item-box {
+  .sec-indoorSpace .item-content .col-item:nth-child(2n+2) .item-box {
     margin-top: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
-  .sec-indoorSpace .item-content .col-md-6:last-child .item-box {
+  .sec-indoorSpace .item-content .col-item:nth-child(2n+2) .item-box {
     margin-top: 3.4375rem;
+  }
+}
+@media (max-width: 767px) {
+  .sec-indoorSpace .item-content .col-item .item-box {
+    margin-top: 1.875rem;
   }
 }
 .sec-indoorSpace.style-2 .title-wrap2 {

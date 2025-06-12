@@ -24,6 +24,7 @@ $cmb_page_home_hero_group->add_field(array(
             'name' => esc_html__('Ảnh nền PC', 'everygolf'),
             'id' => 'bg_pc',
             'type' => 'file',
+            'preview_size' => array(300, 300),
             'options' => array(
                 'url' => false,
             ),
@@ -39,6 +40,7 @@ $cmb_page_home_hero_group->add_field(array(
             'name' => esc_html__('Ảnh nền Mobile', 'everygolf'),
             'id' => 'bg_mb',
             'type' => 'file',
+            'preview_size' => array(300, 300),
             'options' => array(
                 'url' => false,
             ),

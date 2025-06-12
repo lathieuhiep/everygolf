@@ -909,11 +909,9 @@
   }
 
   .item-content {
-    .col-md-6 {
-      &:last-child {
+    .col-item {
+      &:nth-child(2n+2) {
         .item-box {
-          margin-top: rem(30px);
-
           @include media-breakpoint-up(md) {
             margin-top: rem(40px);
           }
@@ -921,6 +919,12 @@
           @include media-breakpoint-up(xl) {
             margin-top: rem(55px);
           }
+        }
+      }
+
+      .item-box {
+        @media (max-width: 767px) {
+          margin-top: rem(30px);
         }
       }
     }

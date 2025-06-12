@@ -13,6 +13,7 @@ get_header();
             get_template_part( 'template-parts/home/inc', 'course' );
             get_template_part( 'template-parts/home/inc', 'numbers' );
             get_template_part( 'template-parts/home/inc', 'coach' );
+            get_template_part( 'template-parts/home/inc', 'indoor-space' );
         endwhile;
         the_posts_pagination();
     endif;

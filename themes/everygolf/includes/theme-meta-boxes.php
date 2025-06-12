@@ -22,6 +22,7 @@ const PREFIX_CMB_PAGE_HOME_ABOUT_INFO = 'cmb_page_home_about_info_';
 const PREFIX_CMB_PAGE_HOME_COURSE = 'cmb_page_home_course_';
 const PREFIX_CMB_PAGE_HOME_NUMBERS = 'cmb_page_home_numbers_';
 const PREFIX_CMB_PAGE_HOME_COACH = 'cmb_page_home_coach_';
+const PREFIX_CMB_PAGE_HOME_INDOOR_SPACE = 'cmb_page_home_indoor_space_';
 
 if ( ! class_exists( 'CMB2' ) ) :
     // Register custom meta boxes for coach
