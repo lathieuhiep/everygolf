@@ -44,5 +44,7 @@ const PREFIX_CMB_PAGE_ABOUT_US_NUMBERS = 'cmb_page_about_us_numbers_';
 const PREFIX_CMB_PAGE_ABOUT_US_INFO = 'cmb_page_about_us_info_';
 const PREFIX_CMB_PAGE_ABOUT_US_HISTORY = 'cmb_page_about_us_history_';
 const PREFIX_CMB_PAGE_ABOUT_US_PARTNER = 'cmb_page_about_us_partner_';
+const PREFIX_CMB_PAGE_ABOUT_US_COURSE = 'cmb_page_about_us_course_';
+const PREFIX_CMB_PAGE_ABOUT_US_COACH = 'cmb_page_about_us_coach_';
 
 require get_theme_file_path( '/includes/meta-boxes/page-about-us-mb.php' );

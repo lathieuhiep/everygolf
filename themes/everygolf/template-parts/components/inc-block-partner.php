@@ -1,5 +1,5 @@
 <?php
-if ( empty( $args ) ) return;
+if ( empty( $args['prefix_cmb'] ) ) return;
 $prefix_cmb = $args['prefix_cmb'];
 
 $title = get_post_meta( get_the_ID(), $prefix_cmb . 'title', true );

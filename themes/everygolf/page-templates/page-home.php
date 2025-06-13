@@ -10,13 +10,15 @@ if ( have_posts() ) :
         get_template_part( 'template-parts/home/inc', 'hero' );
 
         get_template_part( 'template-parts/components/inc', 'about-info', array(
-            'prefix_cmb' => PREFIX_CMB_PAGE_HOME_ABOUT_INFO,
+            'prefix_cmb' => PREFIX_CMB_PAGE_HOME_ABOUT_INFO
         ) );
 
-        get_template_part( 'template-parts/home/inc', 'course' );
+        get_template_part( 'template-parts/components/inc', 'course', array(
+            'prefix_cmb' => PREFIX_CMB_PAGE_HOME_COURSE
+        ) );
 
         get_template_part( 'template-parts/components/inc', 'count-up', array(
-            'prefix_cmb' => PREFIX_CMB_PAGE_HOME_NUMBERS,
+            'prefix_cmb' => PREFIX_CMB_PAGE_HOME_NUMBERS
         ) );
 
         get_template_part( 'template-parts/home/inc', 'coach' );

@@ -8,6 +8,18 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
         'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array($tpl_name)),
     ));
 
+    // style select
+    $cmb_block_course_group->add_field( array(
+        'name'    => esc_html__( 'Chọn Kiểu Giao Diện', 'everygolf' ),
+        'id'      => $prefix . 'style',
+        'type'    => 'select',
+        'options' => array(
+            'style-1' => esc_html__( 'Kiểu 1', 'everygolf' ),
+            'style-2' => esc_html__( 'Kiểu 2', 'everygolf' ),
+        ),
+        'default' => 'style-1',
+    ) );
+
     // Add fields to the group course list
     $cmb_block_course_group->add_field(array(
         'name' => esc_html__('Danh sách khóa học', 'everygolf'),
@@ -23,6 +35,13 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
             'closed' => true,
         ],
         'fields' => array(
+            // section display content
+            array(
+                'name' => esc_html__('Phần 1: Nội dung', 'everygolf'),
+                'type' => 'title',
+                'id' => 'section_display_content',
+            ),
+
             array(
                 'name' => esc_html__('Tiêu đề', 'everygolf'),
                 'id' => 'title',
@@ -30,6 +49,34 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
                 'attributes' => array(
                     'placeholder' => esc_html__('Nhập tiêu đề', 'everygolf'),
                 ),
+            ),
+
+            array(
+                'name' => esc_html__('Tiêu đề phụ', 'everygolf'),
+                'id' => 'sub_title',
+                'type' => 'text',
+                'attributes' => array(
+                    'placeholder' => esc_html__('Nhập tiêu đề phụ', 'everygolf'),
+                ),
+            ),
+
+            array(
+                'name' => esc_html__('Mô tả', 'everygolf'),
+                'id' => 'desc',
+                'type' => 'wysiwyg',
+                'options' => array(
+                    'textarea_rows' => 10,
+                    'teeny' => false,
+                    'tinymce' => true,
+                    'quicktags' => true,
+                ),
+            ),
+
+            // section display media
+            array(
+                'name' => esc_html__('Phần 2: Media', 'everygolf'),
+                'type' => 'title',
+                'id' => 'section_display_media',
             ),
 
             array(
@@ -64,16 +111,32 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
                 ),
             ),
 
+            // section display link
             array(
-                'name' => esc_html__('Mô tả', 'everygolf'),
-                'id' => 'desc',
-                'type' => 'textarea',
+                'name' => esc_html__('Phần 3: liên kết', 'everygolf'),
+                'type' => 'title',
+                'id' => 'section_display_link',
+            ),
+
+            array(
+                'name' => esc_html__('Văn bản', 'everygolf'),
+                'id' => 'btn_text',
+                'type' => 'text',
+                'default' => esc_html__('Đăng ký', 'everygolf'),
                 'attributes' => array(
-                    'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
-                    'rows' => 5,
-                    'style' => 'width: 100%;'
-                )
-            )
+                    'placeholder' => esc_html__('Nhập văn bản', 'everygolf'),
+                ),
+            ),
+
+            array(
+                'name' => esc_html__('Đường dẫn', 'everygolf'),
+                'id' => 'btn_link',
+                'type' => 'text',
+                'default' => '#',
+                'attributes' => array(
+                    'placeholder' => esc_html__('Nhập đường dẫn', 'everygolf'),
+                ),
+            ),
         ),
     ));
 }

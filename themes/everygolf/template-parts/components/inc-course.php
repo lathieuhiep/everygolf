@@ -1,9 +1,14 @@
 <?php
-$courseList = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_COURSE . 'list', true );
+if ( empty( $args['prefix_cmb'] ) ) return;
+
+$prefix_cmb = $args['prefix_cmb'];
+
+$style = get_post_meta( get_the_ID(), $prefix_cmb . 'style', true );
+$courseList = get_post_meta( get_the_ID(), $prefix_cmb . 'list', true );
 
 if ( empty( $courseList ) ) return false;
 ?>
-<section class="section sec-homeKhoaHoc">
+<section class="section sec-homeKhoaHoc <?php echo esc_attr( $style ) ?>">
     <div class="item-wrap">
         <div class="item-sticky">
             <div class="swiper swiper-content">
@@ -20,11 +25,19 @@ if ( empty( $courseList ) ) return false;
                                         <div class="title-wrap wow fadeInUp">
                                             <p class="title-sub"><?php echo esc_html( $item['title'] ); ?></p>
 
-                                            <h2 class="title-title fz-42 uppercase"><?php echo esc_html( $item['desc'] ); ?></h2>
+                                            <h2 class="title-title fz-42 uppercase"><?php echo esc_html( $item['sub_title'] ); ?></h2>
+
+                                            <?php if ( !empty( $item['desc'] ) ) : ?>
+                                                <div class="title-text">
+                                                    <?php echo wpautop( $item['desc'] ); ?>
+                                                </div>
+                                            <?php endif; ?>
 
                                             <div class="title-btn">
-                                                <a href="#" class="btn btn-fixLink btn-icon-right">
-                                                    <?php esc_html_e('Đăng ký', 'everygolf'); ?>
+                                                <a href="<?php echo esc_url( $item['btn_link'] ); ?>"
+                                                   class="btn btn-icon-right<?php echo esc_attr( $style == 'style-1' ? ' btn-fixLink' : '' ) ?>"
+                                                >
+                                                    <?php echo esc_html( $item['btn_text'] ); ?>
                                                     <span><i class="icon-arrow-right"></i></span>
                                                 </a>
                                             </div>
