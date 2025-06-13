@@ -1,4 +1,14 @@
 <?php
+const template_about_us = 'page-templates/page-about-us.php';
+const PREFIX_CMB_PAGE_ABOUT_US_HERO = 'cmb_page_about_us_hero_';
+const PREFIX_CMB_PAGE_ABOUT_US_NUMBERS = 'cmb_page_about_us_numbers_';
+const PREFIX_CMB_PAGE_ABOUT_US_INFO = 'cmb_page_about_us_info_';
+const PREFIX_CMB_PAGE_ABOUT_US_HISTORY = 'cmb_page_about_us_history_';
+const PREFIX_CMB_PAGE_ABOUT_US_PARTNER = 'cmb_page_about_us_partner_';
+const PREFIX_CMB_PAGE_ABOUT_US_COURSE = 'cmb_page_about_us_course_';
+const PREFIX_CMB_PAGE_ABOUT_US_COACH = 'cmb_page_about_us_coach_';
+
+// create cmb blocks for about us page
 add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_page_about_us');
 
 function everygolf_register_custom_fields_for_page_about_us(): void

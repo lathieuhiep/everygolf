@@ -1,4 +1,17 @@
-<header class="header header--transparent">
+<?php
+$class = ' header--transparent';
+
+if ( is_page() ) :
+    $current_page_id = get_the_ID();
+
+    $style_menu = get_post_meta( $current_page_id, PREFIX_CMB_PAGE['menu'] . 'style', true );
+
+    if ( $style_menu == 'relative' ) {
+        $class = '';
+    }
+endif;
+?>
+<header class="header<?php echo esc_attr( $class ); ?>">
     <div class="header__wrap">
         <div class="header__content">
             <!-- main logo -->

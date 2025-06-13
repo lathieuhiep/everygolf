@@ -1,6 +1,14 @@
 <?php
-add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_page_home');
+const template_home = 'page-templates/page-home.php';
+const PREFIX_CMB_PAGE_HOME_HERO = 'cmb_page_home_hero_';
+const PREFIX_CMB_PAGE_HOME_ABOUT_INFO = 'cmb_page_home_about_info_';
+const PREFIX_CMB_PAGE_HOME_COURSE = 'cmb_page_home_course_';
+const PREFIX_CMB_PAGE_HOME_NUMBERS = 'cmb_page_home_numbers_';
+const PREFIX_CMB_PAGE_HOME_COACH = 'cmb_page_home_coach_';
+const PREFIX_CMB_PAGE_HOME_INDOOR_SPACE = 'cmb_page_home_indoor_space_';
 
+// create cmb blocks for home page
+add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_page_home');
 function everygolf_register_custom_fields_for_page_home(): void
 {
     everygolf_cmb_block_slide(PREFIX_CMB_PAGE_HOME_HERO, template_home);

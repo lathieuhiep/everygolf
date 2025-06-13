@@ -1,6 +1,8 @@
 <?php
-add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_cpt_coach');
+const PREFIX_CMB_CPT_COACH = 'cmb_cpt_coach_';
 
+// create cmb2 box for custom post type 'everygolf_coach'
+add_action('cmb2_admin_init', 'everygolf_register_custom_fields_for_cpt_coach');
 function everygolf_register_custom_fields_for_cpt_coach(): void
 {
     $cmb_cpt_coach_group = new_cmb2_box(array(

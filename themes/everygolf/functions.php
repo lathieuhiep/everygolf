@@ -16,6 +16,7 @@ require get_parent_theme_file_path( '/includes/theme-functions.php' );
 
 // Required: Post Types
 require get_parent_theme_file_path( '/includes/cpt/cpt-coach.php' );
+require get_parent_theme_file_path( '/includes/cpt/cpt-academy.php' );
 
 // Required: Theme Options
 require get_theme_file_path( '/includes/theme-options.php' );
