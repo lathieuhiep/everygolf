@@ -5,30 +5,10 @@ $prefix_cmb = $args['prefix_cmb'];
 
 // link template coach
 $coach_page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-coach.php' );
-
-// option query
 $title = get_post_meta(get_the_ID(), $prefix_cmb . 'title', true);
-$limit = intval(get_post_meta(get_the_ID(), $prefix_cmb . 'limit', true));
-$order_by = get_post_meta(get_the_ID(), $prefix_cmb . 'order_by', true);
-$order = get_post_meta(get_the_ID(), $prefix_cmb . 'order', true);
-$ids = get_post_meta(get_the_ID(), $prefix_cmb . 'select_coaches', true);
 
-$args = array(
-    'post_type' => 'everygolf_coach',
-    'ignore_sticky_posts' => true,
-);
-
-if (!empty($ids) && is_array($ids)) {
-    $args['post__in'] = $ids;
-    $args['orderby'] = 'post__in';
-    $args['posts_per_page'] = -1;
-} else {
-    $args['posts_per_page'] = $limit > 0 ? $limit : 4;
-    $args['orderby'] = $order_by ?: 'ID';
-    $args['order'] = $order ?: 'ASC';
-}
-
-$query = new WP_Query( $args );
+// query
+$query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_coach');
 ?>
 <section class="section sec-aboutBLD">
     <div class="container">

@@ -2049,18 +2049,16 @@
       }
     }
 
-    .item-2 {
-      .row {
-        flex-direction: row-reverse;
-      }
-    }
-
     .roomBox__imgSlide {
       max-width: 95%;
       margin-bottom: 0;
     }
 
     .item-2 {
+      .row {
+        flex-direction: row-reverse;
+      }
+
       .roomBox__imgSlide {
         margin-left: 5%;
         margin-right: -8vw;

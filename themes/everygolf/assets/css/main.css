@@ -13272,12 +13272,12 @@ textarea {
   .sec-HVCoso .item + .item {
     margin-top: 4.375rem;
   }
-  .sec-HVCoso .item-2 .row {
-    flex-direction: row-reverse;
-  }
   .sec-HVCoso .roomBox__imgSlide {
     max-width: 95%;
     margin-bottom: 0;
+  }
+  .sec-HVCoso .item-2 .row {
+    flex-direction: row-reverse;
   }
   .sec-HVCoso .item-2 .roomBox__imgSlide {
     margin-left: 5%;

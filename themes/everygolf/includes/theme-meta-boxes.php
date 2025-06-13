@@ -7,11 +7,11 @@ require get_theme_file_path( '/includes/meta-boxes/blocks/block-about-hero.php' 
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-about-history.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-about-info.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-banner-hero.php' );
-require get_theme_file_path( '/includes/meta-boxes/blocks/block-coach.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-count-up.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-course.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-indoor-space.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-partner.php' );
+require get_theme_file_path( '/includes/meta-boxes/blocks/block-query.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-slide.php' );
 
 // Register custom meta boxes for coach

@@ -1,30 +1,10 @@
 <?php
 // link template coach
 $coach_page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-coach.php' );
-
-// option query
 $title = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_COACH . 'title', true);
-$limit = intval(get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_COACH . 'limit', true));
-$order_by = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_COACH . 'order_by', true);
-$order = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_COACH . 'order', true);
-$ids = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_COACH . 'select_coaches', true);
 
-$args = array(
-    'post_type' => 'everygolf_coach',
-    'ignore_sticky_posts' => true,
-);
-
-if (!empty($ids) && is_array($ids)) {
-    $args['post__in'] = $ids;
-    $args['orderby'] = 'post__in';
-    $args['posts_per_page'] = -1;
-} else {
-    $args['posts_per_page'] = $limit > 0 ? $limit : 4;
-    $args['orderby'] = $order_by ?: 'ID';
-    $args['order'] = $order ?: 'ASC';
-}
-
-$query = new WP_Query( $args );
+// query
+$query = everygolf_cmb_get_query(PREFIX_CMB_PAGE_HOME_COACH, 'everygolf_coach');
 ?>
 <section class="section sec-homeDoiNgu">
     <div class="container">

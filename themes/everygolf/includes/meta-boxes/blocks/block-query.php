@@ -1,26 +1,26 @@
 <?php
-function everygolf_cmb_block_coach($prefix, $tpl_name): void
+function everygolf_cmb_block_query($prefix, $tpl_name, $name_group, $default_title, $limit_default, $post_type = []): void
 {
-    $cmb_block_coach_group = new_cmb2_box(array(
+    $cmb_block_query_group = new_cmb2_box(array(
         'id' => $prefix . 'group',
-        'title' => esc_html__('Khối: Đội ngũ', 'everygolf'),
+        'title' => esc_html__('Khối:', 'everygolf') . ' ' .$name_group,
         'object_types' => array('page'),
         'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array($tpl_name)),
     ));
 
-    $cmb_block_coach_group->add_field(array(
+    $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Tiêu đề', 'everygolf'),
         'id' => $prefix . 'title',
         'type' => 'text',
         'sanitization_cb' => false,
         'escape_cb' => false,
-        'default' => esc_html__('Đội ngũ<br>chuyên gia', 'everygolf'),
+        'default' => $default_title,
         'attributes' => array(
             'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
         ),
     ));
 
-    $cmb_block_coach_group->add_field(array(
+    $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Số lượng hiển thị', 'everygolf'),
         'id' => $prefix . 'limit',
         'type' => 'text_small',
@@ -29,10 +29,10 @@ function everygolf_cmb_block_coach($prefix, $tpl_name): void
             'min' => 1,
             'step' => 1,
         ),
-        'default' => 4,
+        'default' => $limit_default,
     ));
 
-    $cmb_block_coach_group->add_field(array(
+    $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Sắp xếp theo', 'everygolf'),
         'id' => $prefix . 'order_by',
         'type' => 'select',
@@ -45,7 +45,7 @@ function everygolf_cmb_block_coach($prefix, $tpl_name): void
         'default' => 'ID',
     ));
 
-    $cmb_block_coach_group->add_field(array(
+    $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Thứ tự sắp xếp', 'everygolf'),
         'id' => $prefix . 'order',
         'type' => 'select',
@@ -56,7 +56,7 @@ function everygolf_cmb_block_coach($prefix, $tpl_name): void
         'default' => 'ASC',
     ));
 
-    $cmb_block_coach_group->add_field(array(
+    $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Chọn đội ngũ', 'everygolf'),
         'id' => $prefix . 'select_coaches',
         'type' => 'post_ajax_search',
@@ -64,7 +64,7 @@ function everygolf_cmb_block_coach($prefix, $tpl_name): void
         'sortable' => true,
         'desc' => esc_html__('Sử dụng thì số lượng và sắp xếp sẽ nhận theo trường này. Nhập tên để tìm kiếm.', 'everygolf'),
         'query_args' => array(
-            'post_type' => array('everygolf_coach'),
+            'post_type' => $post_type,
             'post_status' => array('publish'),
         )
     ));
