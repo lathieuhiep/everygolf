@@ -1,7 +1,7 @@
 <?php
-function everygolf_block_cmb_about_info($prefix, $tpl_name): void
+function everygolf_cmb_block_about_info($prefix, $tpl_name): void
 {
-    $cmb = new_cmb2_box(array(
+    $cmb_block_about_info_group = new_cmb2_box(array(
         'id' => $prefix . 'group',
         'title' => esc_html__('Khối: Thông tin', 'everygolf'),
         'object_types' => array('page'),
@@ -9,13 +9,13 @@ function everygolf_block_cmb_about_info($prefix, $tpl_name): void
     ));
 
     // section display
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name' => esc_html__('Phần 1: Hiển thị', 'everygolf'),
         'type' => 'title',
         'id'   => $prefix . 'section_display',
     ) );
 
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name' => esc_html__('Tiêu đề', 'everygolf'),
         'id'   => $prefix . 'title',
         'type' => 'textarea',
@@ -29,7 +29,7 @@ function everygolf_block_cmb_about_info($prefix, $tpl_name): void
         ),
     ) );
 
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name' => esc_html__('Mô tả', 'everygolf'),
         'id'   => $prefix . 'desc',
         'type' => 'textarea',
@@ -44,13 +44,13 @@ function everygolf_block_cmb_about_info($prefix, $tpl_name): void
     ) );
 
     // section hyperlinks
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name' => esc_html__('Phần 2: Liên kết', 'everygolf'),
         'type' => 'title',
         'id'   => $prefix . 'section_hyperlinks',
     ) );
 
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name' => esc_html__('Tiêu đề liên kết', 'everygolf'),
         'id'   => $prefix . 'text_hyperlinks',
         'type' => 'text',
@@ -60,7 +60,7 @@ function everygolf_block_cmb_about_info($prefix, $tpl_name): void
         ),
     ) );
 
-    $cmb->add_field( array(
+    $cmb_block_about_info_group->add_field( array(
         'name'    => esc_html__('Liên kết đến trang', 'everygolf'),
         'id'      => $prefix . 'page_link',
         'type'    => 'select',

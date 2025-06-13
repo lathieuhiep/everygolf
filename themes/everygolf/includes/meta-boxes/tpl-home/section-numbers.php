@@ -1,2 +1,0 @@
-<?php
-everygolf_block_cmb_count_up(PREFIX_CMB_PAGE_HOME_NUMBERS, template_home);

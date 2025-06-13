@@ -1,14 +1,14 @@
 <?php
-function everygolf_block_cmb_count_up($prefix, $tpl_name): void
+function everygolf_cmb_block_count_up($prefix, $tpl_name): void
 {
-    $cmb = new_cmb2_box(array(
+    $cmb_count_up_group = new_cmb2_box(array(
         'id' => $prefix . 'group',
         'title' => esc_html__('Khối: Thống kê', 'everygolf'),
         'object_types' => array('page'),
         'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array($tpl_name)),
     ));
 
-    $cmb->add_field(array(
+    $cmb_count_up_group->add_field(array(
         'name' => esc_html__('Danh sách thống kê', 'everygolf'),
         'id' => $prefix . 'list',
         'type' => 'group',

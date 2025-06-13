@@ -19,6 +19,10 @@ if (have_posts()) :
         ) );
 
         get_template_part( 'template-parts/about-us/inc', 'about-history' );
+
+        get_template_part( 'template-parts/components/inc', 'block-partner', array(
+            'prefix_cmb' => PREFIX_CMB_PAGE_ABOUT_US_PARTNER,
+        ) );
     endwhile;
     the_posts_pagination();
 endif;

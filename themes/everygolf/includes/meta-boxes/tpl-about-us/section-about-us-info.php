@@ -1,2 +1,0 @@
-<?php
-everygolf_block_cmb_about_info(PREFIX_CMB_PAGE_ABOUT_US_INFO, template_about_us);
