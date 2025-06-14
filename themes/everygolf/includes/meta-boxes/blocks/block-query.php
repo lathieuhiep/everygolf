@@ -1,25 +1,29 @@
 <?php
-function everygolf_cmb_block_query($prefix, $tpl_name, $name_group, $default_title, $limit_default, $post_type = []): void
+function everygolf_cmb_block_query(
+    $prefix,
+    $tpl_name,
+    $name_group,
+    $limit_default,
+    $post_type = [],
+    $extra_fields_top = [],
+    $extra_fields_bottom = []
+): void
 {
     $cmb_block_query_group = new_cmb2_box(array(
         'id' => $prefix . 'group',
-        'title' => esc_html__('Khối:', 'everygolf') . ' ' .$name_group,
+        'title' => esc_html__('Khối:', 'everygolf') . ' ' . $name_group,
         'object_types' => array('page'),
         'show_on_cb' => everygolf_cmb2_show_if_page_template_in(array($tpl_name)),
     ));
 
-    $cmb_block_query_group->add_field(array(
-        'name' => esc_html__('Tiêu đề', 'everygolf'),
-        'id' => $prefix . 'title',
-        'type' => 'text',
-        'sanitization_cb' => false,
-        'escape_cb' => false,
-        'default' => $default_title,
-        'attributes' => array(
-            'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
-        ),
-    ));
+    // add fields top
+    if (!empty($extra_fields_top) && is_array($extra_fields_top)) {
+        foreach ($extra_fields_top as $field) {
+            $cmb_block_query_group->add_field($field);
+        }
+    }
 
+    // fields default
     $cmb_block_query_group->add_field(array(
         'name' => esc_html__('Số lượng hiển thị', 'everygolf'),
         'id' => $prefix . 'limit',
@@ -68,4 +72,11 @@ function everygolf_cmb_block_query($prefix, $tpl_name, $name_group, $default_tit
             'post_status' => array('publish'),
         )
     ));
+
+    // add fields bottom
+    if (!empty($extra_fields_bottom) && is_array($extra_fields_bottom)) {
+        foreach ($extra_fields_bottom as $field) {
+            $cmb_block_query_group->add_field($field);
+        }
+    }
 }

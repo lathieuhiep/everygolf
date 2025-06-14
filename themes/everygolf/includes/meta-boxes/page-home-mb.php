@@ -23,9 +23,21 @@ function everygolf_register_custom_fields_for_page_home(): void
         PREFIX_CMB_PAGE_HOME_COACH,
         template_home,
         esc_html__('Đội ngũ', 'everygolf'),
-        esc_html__('Đội ngũ<br>chuyên gia', 'everygolf'),
         4,
-        ['everygolf_coach']
+        ['everygolf_coach'],
+        [
+            [
+                'name' => esc_html__('Tiêu đề', 'everygolf'),
+                'id' => PREFIX_CMB_PAGE_HOME_COACH . 'title',
+                'type' => 'text',
+                'sanitization_cb' => false,
+                'escape_cb' => false,
+                'default' => esc_html__('Đội ngũ<br>chuyên gia', 'everygolf'),
+                'attributes' => array(
+                    'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
+                ),
+            ]
+        ]
     );
 
     everygolf_cmb_block_indoor_space(PREFIX_CMB_PAGE_HOME_INDOOR_SPACE, template_home);

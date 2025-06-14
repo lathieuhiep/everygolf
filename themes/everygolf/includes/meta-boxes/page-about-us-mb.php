@@ -29,8 +29,20 @@ function everygolf_register_custom_fields_for_page_about_us(): void
         PREFIX_CMB_PAGE_ABOUT_US_COACH,
         template_about_us,
         esc_html__('Đội ngũ', 'everygolf'),
-        esc_html__('Ban lãnh đạo', 'everygolf'),
         6,
-        ['everygolf_coach']
+        ['everygolf_coach'],
+        [
+            [
+                'name' => esc_html__('Tiêu đề', 'everygolf'),
+                'id' => PREFIX_CMB_PAGE_ABOUT_US_COACH . 'title',
+                'type' => 'text',
+                'sanitization_cb' => false,
+                'escape_cb' => false,
+                'default' => esc_html__('Ban lãnh đạo', 'everygolf'),
+                'attributes' => array(
+                    'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
+                ),
+            ]
+        ]
     );
 }

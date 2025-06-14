@@ -14,6 +14,14 @@ if (have_posts()) :
         get_template_part( 'template-parts/components/inc', 'academy-list', array(
             'prefix_cmb' => PREFIX_CMB_PAGE_ACADEMY['cpt']
         ) );
+
+        get_template_part( 'template-parts/components/inc', 'facility', array(
+            'prefix_cmb' => PREFIX_CMB_PAGE_ACADEMY['cpt_facility']
+        ) );
+
+        get_template_part( 'template-parts/components/inc', 'img-grid', array(
+            'prefix_cmb' => PREFIX_CMB_PAGE_ACADEMY['img_grid']
+        ) );
     endwhile;
     the_posts_pagination();
 endif;

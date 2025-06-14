@@ -14,11 +14,10 @@ require get_theme_file_path( '/includes/meta-boxes/blocks/block-partner.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-query.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-slide.php' );
 
-// Register custom meta boxes for coach
+// Register custom meta boxes cpt
 require get_theme_file_path( '/includes/meta-boxes/cpt-coach-mb.php' );
-
-// Register custom meta boxes for academy
 require get_theme_file_path( '/includes/meta-boxes/cpt-academy-mb.php' );
+require get_theme_file_path( '/includes/meta-boxes/cpt-facility-mb.php' );
 
 // Register custom meta boxes page
 require get_theme_file_path( '/includes/meta-boxes/page-mb.php' );

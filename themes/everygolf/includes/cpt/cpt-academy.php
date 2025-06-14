@@ -39,7 +39,7 @@ function everygolf_register_cpt_academy(): void
     register_post_type('everygolf_academy', $args);
 }
 
-// Add custom columns to the coach post type in the admin area
+// Add custom columns post type in the admin area
 add_filter('manage_everygolf_academy_posts_columns', function ($columns) {
     $columns['menu_order'] = 'Thứ tự';
     return $columns;
