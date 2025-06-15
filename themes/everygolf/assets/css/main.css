@@ -5770,6 +5770,12 @@ i {
   opacity: 0.8;
 }
 
+.list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
