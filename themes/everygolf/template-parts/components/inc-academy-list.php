@@ -3,15 +3,19 @@ if ( empty( $args['prefix_cmb'] ) ) return;
 $prefix_cmb = $args['prefix_cmb'];
 
 $title = get_post_meta(get_the_ID(), $prefix_cmb . 'title', true);
+$text_link = get_post_meta(get_the_ID(), $prefix_cmb . 'text_link', true);
+$page_id = get_post_meta(get_the_ID(), $prefix_cmb . 'url', true);
 
 // query
-$query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_academy');
+$query = everygolf_cmb_get_query($prefix_cmb, 'eg_setup_space');
 ?>
 <section class="section sec-HVCoso">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <h2 class="title-title fz-60 uppercase title-effect-1 wow">Cơ sở <br class="d-md-none">hoạt động</h2>
+                <h2 class="title-title fz-60 uppercase title-effect-1 wow">
+                    <?php echo wp_kses_post( $title ); ?>
+                </h2>
 
                 <?php if ( $query->have_posts() ) : ?>
                     <div class="item-list">
@@ -19,8 +23,8 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_academy');
                         $stt_item = 1;
 
                         while ( $query->have_posts() ) : $query->the_post();
-                            $galleries = get_post_meta(get_the_ID(), PREFIX_CMB_CPT_ACADEMY . 'galleries', true);
-                            $info = get_post_meta(get_the_ID(), PREFIX_CMB_CPT_ACADEMY . 'list', true);
+                            $galleries = get_post_meta(get_the_ID(), PREFIX_CMB_CPT_SETUP_SPACE . 'galleries', true);
+                            $info = get_post_meta(get_the_ID(), PREFIX_CMB_CPT_SETUP_SPACE . 'list', true);
                         ?>
                             <div class="item <?php echo esc_attr( $stt_item % 2 == 0 ? 'item-2' : 'item-1' ); ?>">
                                 <div class="row">
@@ -105,12 +109,17 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_academy');
                                                 </ul>
                                             <?php endif; ?>
 
-                                            <div class="item__btn wow fadeInUp">
-                                                <a href="#" class="btn btn-fixLink btn-icon-right">
-                                                    <?php esc_html_e('Đăng ký', 'everygolf'); ?>
-                                                    <span><i class="icon-arrow-right"></i></span>
-                                                </a>
-                                            </div>
+                                            <?php
+                                            if ( $page_id ) :
+                                                $page_url = get_permalink( $page_id );
+                                            ?>
+                                                <div class="item__btn wow fadeInUp">
+                                                    <a href="<?php echo esc_url( $page_url ) ?>" class="btn btn-fixLink btn-icon-right">
+                                                        <?php echo esc_html( $text_link ); ?>
+                                                        <span><i class="icon-arrow-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>

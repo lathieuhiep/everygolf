@@ -17,7 +17,6 @@ require get_theme_file_path( '/includes/meta-boxes/blocks/block-slide.php' );
 
 // Register custom meta boxes cpt
 require get_theme_file_path( '/includes/meta-boxes/cpt-coach-mb.php' );
-require get_theme_file_path( '/includes/meta-boxes/cpt-academy-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/cpt-facility-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/cpt-setup-space-mb.php' );
 

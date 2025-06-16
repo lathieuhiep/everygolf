@@ -20,7 +20,7 @@ function everygolf_register_custom_fields_for_page_academy(): void
         template_academy,
         esc_html__('Cơ sở', 'everygolf'),
         2,
-        ['everygolf_academy'],
+        ['eg_setup_space'],
         [
             [
                 'name' => esc_html__('Tiêu đề', 'everygolf'),
@@ -32,6 +32,29 @@ function everygolf_register_custom_fields_for_page_academy(): void
                 'attributes' => array(
                     'placeholder' => esc_html__('Nhập nội dung', 'everygolf'),
                 ),
+            ]
+        ],
+        [
+            [
+                'name' => esc_html__('Phần: Liên kết', 'everygolf'),
+                'type' => 'title',
+                'id'   => PREFIX_CMB_PAGE_ACADEMY['cpt'] . 'section_link',
+            ],
+            [
+                'name' => esc_html__('Tiêu đề liên kết', 'everygolf'),
+                'id'   => PREFIX_CMB_PAGE_ACADEMY['cpt'] . 'text_link',
+                'type' => 'text',
+                'default' => esc_html__('Đăng ký', 'everygolf'),
+                'attributes' => array(
+                    'placeholder' => esc_html__('Nhập tiêu đề liên kết', 'everygolf'),
+                ),
+            ],
+            [
+                'name'    => esc_html__('Liên kết đến trang', 'everygolf'),
+                'id'      => PREFIX_CMB_PAGE_ACADEMY['cpt'] . 'url',
+                'type'    => 'select',
+                'options' => array( '' => esc_html__('— Không chọn —', 'everygolf') ) + wp_list_pluck( get_pages(), 'post_title', 'ID' ),
+                'placeholder' => esc_html__('Chọn một trang...', 'everygolf'),
             ]
         ]
     );
