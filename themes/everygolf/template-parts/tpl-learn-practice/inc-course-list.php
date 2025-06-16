@@ -14,7 +14,10 @@ if ( empty( $course_list ) ) return;
                 <div class="item-head__inner wow fadeInUp">
                     <div class="ul-menu onePageNav">
                         <ul>
-                            <?php foreach ( $course_list as $key => $item ) : ?>
+                            <?php
+                            foreach ( $course_list as $key => $item ) :
+                                if ( !empty( $item['heading'] ) ) :
+                            ?>
                                 <li>
                                     <a href="#nav-id-<?php echo esc_attr( $key + 1 ); ?>"
                                        class="scroll-link<?php echo esc_attr( $key == 0 ? ' current' : '' ) ?>"
@@ -22,7 +25,10 @@ if ( empty( $course_list ) ) return;
                                         <span><?php echo esc_html( $item['heading'] ); ?></span>
                                     </a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php
+                                endif;
+                            endforeach;
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +48,13 @@ if ( empty( $course_list ) ) return;
                         <div class="khoahocBox__head wow fadeInUp">
                             <div class="f-left">
                                 <span class="f-left__num"><?php echo esc_html(str_pad(($key + 1), 2, '0', STR_PAD_LEFT)); ?></span>
-                                <h3 class="f-left__title uppercase"><?php echo esc_html( $item['heading'] ); ?></h3>
+                                <h3 class="f-left__title uppercase">
+                                    <?php
+                                    if ( !empty( $item['heading'] ) ) :
+                                        echo esc_html( $item['heading'] );
+                                    endif;
+                                    ?>
+                                </h3>
                             </div>
 
                             <div class="f-img">
