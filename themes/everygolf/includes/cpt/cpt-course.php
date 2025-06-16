@@ -36,7 +36,7 @@ function everygolf_register_cpt_course(): void
         'show_in_rest' => true,
     );
 
-    register_post_type('everygolf_course', $args);
+    register_post_type('eg_course', $args);
 
     // register taxonomy
     $tax_args = array(
@@ -59,19 +59,19 @@ function everygolf_register_cpt_course(): void
         'query_var' => true,
         'rewrite' => array('slug' => 'danh-muc-khoa-hoc'),
     );
-    register_taxonomy('everygolf_course_cat', array('everygolf_course'), $tax_args);
+    register_taxonomy('eg_course_cat', array('eg_course'), $tax_args);
 }
 
 add_action('init', 'everygolf_register_cpt_course');
 
 // Add custom columns post type in the admin area
-add_filter('manage_everygolf_course_posts_columns', function ($columns) {
+add_filter('manage_eg_course_posts_columns', function ($columns) {
     $columns['menu_order'] = 'Thứ tự';
     return $columns;
 });
 
 // Display the menu order in the custom column
-add_action('manage_everygolf_course_posts_custom_column', function ($column, $post_id) {
+add_action('manage_eg_course_posts_custom_column', function ($column, $post_id) {
     if ('menu_order' === $column) {
         echo get_post_field('menu_order', $post_id);
     }

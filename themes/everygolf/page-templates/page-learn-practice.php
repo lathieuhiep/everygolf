@@ -12,7 +12,7 @@ if (have_posts()) :
         ) );
 
         get_template_part( 'template-parts/tpl-learn-practice/inc', 'course-list', array(
-            'prefix_cmb' => PREFIX_CMB_PAGE_LEARN_PRACTICE_COURSE_LIST,
+            'prefix_cmb' => PREFIX_CMB_PAGE_LEARN_PRACTICE_COURSE,
         ) );
     endwhile;
     the_posts_pagination();

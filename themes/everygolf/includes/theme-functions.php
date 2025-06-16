@@ -3,6 +3,17 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// Link Pages
+function everygolf_link_page(): void {
+    wp_link_pages( array(
+        'before'      => '<div class="page-links">' . esc_html__( 'Trang:', 'everygolf' ),
+        'after'       => '</div>',
+        'link_before' => '<span class="page-number">',
+        'link_after'  => '</span>',
+    ) );
+}
+
+// Get Page Link Info by Template File
 function everygolf_get_page_link_info_by_template_file( $template_slug ): bool|array
 {
     if ( empty( $template_slug ) ) {
@@ -31,12 +42,9 @@ function everygolf_get_page_link_info_by_template_file( $template_slug ): bool|a
     return false;
 }
 
-// Link Pages
-function everygolf_link_page(): void {
-    wp_link_pages( array(
-        'before'      => '<div class="page-links">' . esc_html__( 'Trang:', 'everygolf' ),
-        'after'       => '</div>',
-        'link_before' => '<span class="page-number">',
-        'link_after'  => '</span>',
-    ) );
+function everygolf_get_url_tpl_contact(): string
+{
+    $page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-contact.php' );
+
+    return $page ? $page['url'] : '#';
 }

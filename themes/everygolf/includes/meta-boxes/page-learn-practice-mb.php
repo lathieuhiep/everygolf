@@ -109,7 +109,7 @@ function everygolf_register_cmb_page_learn_practice(): void
                 'sortable' => true,
                 'desc' => esc_html__('Chọn danh mục hiển thị. Nhập tên để tìm kiếm.', 'everygolf'),
                 'query_args' => array(
-                    'taxonomy' => 'everygolf_course_cat',
+                    'taxonomy' => 'eg_course_cat',
                     'hide_empty' => false,
                 )
             ),
@@ -123,7 +123,7 @@ function everygolf_register_cmb_page_learn_practice(): void
                     'min' => 1,
                     'step' => 1,
                 ),
-                'default' => 3,
+                'default' => 4,
             ),
 
             array(
