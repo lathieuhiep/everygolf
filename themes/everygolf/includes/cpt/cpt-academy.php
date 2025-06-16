@@ -30,7 +30,7 @@ function everygolf_register_cpt_academy(): void
         'capability_type' => 'post',
         'has_archive' => false,
         'hierarchical' => false,
-        'menu_position' => 5,
+        'menu_position' => 3,
         'menu_icon' => 'dashicons-building',
         'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
         'show_in_rest' => true,

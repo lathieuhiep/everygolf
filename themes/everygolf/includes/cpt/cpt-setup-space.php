@@ -1,12 +1,12 @@
 <?php
-function everygolf_register_cpt_course(): void
+function everygolf_register_cpt_setup_space(): void
 {
     // Register custom post type
     $labels = array(
-        'name' => esc_html__('Khóa học', 'everygolf'),
-        'singular_name' => esc_html__('Khóa học', 'everygolf'),
-        'menu_name' => esc_html__('Khóa học', 'everygolf'),
-        'name_admin_bar' => esc_html__('Khóa học', 'everygolf'),
+        'name' => esc_html__('Không gian', 'everygolf'),
+        'singular_name' => esc_html__('Không gian', 'everygolf'),
+        'menu_name' => esc_html__('Không gian', 'everygolf'),
+        'name_admin_bar' => esc_html__('Không gian', 'everygolf'),
         'add_new' => esc_html__('Thêm', 'everygolf'),
         'add_new_item' => esc_html__('Thêm', 'everygolf'),
         'new_item' => esc_html__('Mới', 'everygolf'),
@@ -19,24 +19,24 @@ function everygolf_register_cpt_course(): void
     );
 
     $args = array(
-        'label' => esc_html__('Khóa học', 'everygolf'),
+        'label' => esc_html__('Không gian', 'everygolf'),
         'labels' => $labels,
         'public' => true,
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'khoa-hoc'),
+        'rewrite' => array('slug' => 'khong-gian'),
         'capability_type' => 'post',
         'has_archive' => false,
         'hierarchical' => false,
-        'menu_position' => 5,
-        'menu_icon' => 'dashicons-welcome-learn-more',
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-store',
         'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
         'show_in_rest' => true,
     );
 
-    register_post_type('eg_course', $args);
+    register_post_type('eg_setup_space', $args);
 
     // register taxonomy
     $tax_args = array(
@@ -57,21 +57,21 @@ function everygolf_register_cpt_course(): void
         'show_ui' => true,
         'show_admin_column' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'danh-muc-khoa-hoc'),
+        'rewrite' => array('slug' => 'danh-muc-khong-gian'),
     );
-    register_taxonomy('eg_course_cat', array('eg_course'), $tax_args);
+    register_taxonomy('eg_setup_space_cat', array('eg_setup_space'), $tax_args);
 }
 
-add_action('init', 'everygolf_register_cpt_course');
+add_action('init', 'everygolf_register_cpt_setup_space');
 
 // Add custom columns post type in the admin area
-add_filter('manage_eg_course_posts_columns', function ($columns) {
+add_filter('manage_eg_setup_space_posts_columns', function ($columns) {
     $columns['menu_order'] = 'Thứ tự';
     return $columns;
 });
 
 // Display the menu order in the custom column
-add_action('manage_eg_course_posts_custom_column', function ($column, $post_id) {
+add_action('manage_eg_setup_space_posts_custom_column', function ($column, $post_id) {
     if ('menu_order' === $column) {
         echo get_post_field('menu_order', $post_id);
     }
