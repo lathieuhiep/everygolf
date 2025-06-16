@@ -18,6 +18,7 @@ require get_parent_theme_file_path( '/includes/theme-functions.php' );
 require get_parent_theme_file_path( '/includes/cpt/cpt-coach.php' );
 require get_parent_theme_file_path( '/includes/cpt/cpt-academy.php' );
 require get_parent_theme_file_path( '/includes/cpt/cpt-facility.php' );
+require get_parent_theme_file_path( '/includes/cpt/cpt-course.php' );
 
 // Required: Theme Options
 require get_theme_file_path( '/includes/theme-options.php' );

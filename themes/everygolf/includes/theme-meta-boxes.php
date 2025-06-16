@@ -26,3 +26,4 @@ require get_theme_file_path( '/includes/meta-boxes/page-home-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-about-us-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-academy-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-coach-mb.php' );
+require get_theme_file_path( '/includes/meta-boxes/page-learn-practice-mb.php' );

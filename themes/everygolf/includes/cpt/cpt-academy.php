@@ -31,7 +31,7 @@ function everygolf_register_cpt_academy(): void
         'has_archive' => false,
         'hierarchical' => false,
         'menu_position' => 5,
-        'menu_icon' => 'dashicons-welcome-learn-more',
+        'menu_icon' => 'dashicons-building',
         'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
         'show_in_rest' => true,
     );
