@@ -15,6 +15,9 @@ require get_theme_file_path( '/includes/meta-boxes/blocks/block-partner.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-query.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-slide.php' );
 
+// require fields base
+require get_theme_file_path( '/includes/meta-boxes/cmb-field-base.php' );
+
 // Register custom meta boxes cpt
 require get_theme_file_path( '/includes/meta-boxes/cpt-coach-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/cpt-facility-mb.php' );

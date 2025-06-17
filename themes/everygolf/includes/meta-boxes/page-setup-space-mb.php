@@ -92,4 +92,8 @@ function everygolf_register_cmb_page_setup_space(): void
             'post_status' => array('publish'),
         )
     ));
+
+    foreach ( everygolf_cmb_set_page_link(PREFIX_CMB_PAGE_SETUP_SPACE_ROOM) as $field) :
+        $cmb_page_setup_space_room_group->add_field($field);
+    endforeach;
 }

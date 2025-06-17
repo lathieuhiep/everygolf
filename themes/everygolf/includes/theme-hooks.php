@@ -40,6 +40,23 @@ function blank_wp_disable_emojis_tinymce( $plugins ): array {
     }
 }
 
+// set posts per page
+add_action('pre_get_posts', function( $query ) {
+    if ( is_admin() || !$query->is_main_query() ) return;
+
+    if ( is_home() || is_post_type_archive('post') || is_category() || is_tag() || is_tax() ) {
+        $paged = get_query_var('paged') ?: 1;
+        $posts_per_page = get_option( 'posts_per_page' );
+
+        $query->set( 'posts_per_page', $posts_per_page );
+        $query->set( 'ignore_sticky_posts', true );
+
+        if ( $paged === 1 ) {
+            $query->set( 'offset', 1 ); // Để loại trừ bài featured
+        }
+    }
+});
+
 /*
  * Filter
  * */

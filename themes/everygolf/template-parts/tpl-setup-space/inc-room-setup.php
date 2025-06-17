@@ -3,6 +3,8 @@ if ( empty( $args['prefix_cmb'] ) ) return;
 $prefix_cmb = $args['prefix_cmb'];
 
 $ids = get_post_meta( get_the_ID(), $prefix_cmb . 'select_cpt', true );
+$text_link = get_post_meta( get_the_ID(), $prefix_cmb . 'text_link', true );
+$page_id = get_post_meta( get_the_ID(), $prefix_cmb . 'url', true );
 
 if ( empty( $ids ) ) return;
 
@@ -73,12 +75,17 @@ $query = new WP_Query( $args );
                                             </ul>
                                         <?php endif; ?>
 
-                                        <div class="roomBox__btn wow fadeInUp">
-                                            <a href="#" class="btn btn-fixLink btn-icon-right">
-                                                <?php esc_html_e( 'Đăng ký', 'everygolf' ); ?>
-                                                <span><i class="icon-arrow-right"></i></span>
-                                            </a>
-                                        </div>
+                                        <?php
+                                        if ( $page_id ) :
+                                            $page_url = get_permalink( $page_id );
+                                        ?>
+                                            <div class="roomBox__btn wow fadeInUp">
+                                                <a href="<?php echo esc_url( $page_url ); ?>" class="btn btn-fixLink btn-icon-right">
+                                                    <?php esc_html_e( 'Đăng ký', 'everygolf' ); ?>
+                                                    <span><i class="icon-arrow-right"></i></span>
+                                                </a>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
 
@@ -86,40 +93,31 @@ $query = new WP_Query( $args );
                                     <div class="roomBox__imgSlide wow fadeInUp">
                                         <div class="swiper swiper-big">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide" data-index="0">
-                                                    <img src="assets/img/roomSetup-img-1.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="1">
-                                                    <img src="assets/img/roomSetup-img-2.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="2">
-                                                    <img src="assets/img/roomSetup-img-3.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="3">
-                                                    <img src="assets/img/roomSetup-img-4.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="4">
-                                                    <img src="assets/img/roomSetup-img-3.jpg" alt="">
-                                                </div>
+                                                <?php
+                                                $loop_gallery = 0;
+
+                                                foreach ( $galleries as $attachment_id => $attachment_url ) :
+                                                ?>
+                                                    <div class="swiper-slide" data-index="<?php echo esc_attr( $loop_gallery ) ?>">
+                                                        <?php echo wp_get_attachment_image($attachment_id, 'large'); ?>
+                                                    </div>
+                                                <?php $loop_gallery++; endforeach; ?>
                                             </div>
                                         </div>
+
                                         <div class="swiper swiper-thumb">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide current" data-index="0">
-                                                    <img src="assets/img/roomSetup-img-2.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="1">
-                                                    <img src="assets/img/roomSetup-img-3.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="2">
-                                                    <img src="assets/img/roomSetup-img-4.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="3">
-                                                    <img src="assets/img/roomSetup-img-3.jpg" alt="">
-                                                </div>
-                                                <div class="swiper-slide" data-index="4">
-                                                    <img src="assets/img/roomSetup-img-2.jpg" alt="">
-                                                </div>
+                                                <?php
+                                                $loop_gallery = 0;
+
+                                                foreach ( $galleries as $attachment_id => $attachment_url ) :
+                                                ?>
+                                                    <div class="swiper-slide<?php echo esc_attr( $loop_gallery == 0 ? ' current' : '' ) ?>"
+                                                         data-index="<?php echo esc_attr( $loop_gallery ) ?>"
+                                                    >
+                                                        <?php echo wp_get_attachment_image($attachment_id, 'large'); ?>
+                                                    </div>
+                                                <?php $loop_gallery++; endforeach; ?>
                                             </div>
                                         </div>
                                     </div>

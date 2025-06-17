@@ -42,7 +42,7 @@ function everygolf_register_cpt_setup_space(): void
     $tax_args = array(
         'hierarchical' => true,
         'labels' => array(
-            'name' => esc_html__('Danh mục', 'everygolf'),
+            'name' => esc_html__('Danh mục không gian', 'everygolf'),
             'singular_name' => esc_html__('Danh mục', 'everygolf'),
             'search_items' => esc_html__('Tìm kiếm danh mục', 'everygolf'),
             'all_items' => esc_html__('Tất cả danh mục', 'everygolf'),

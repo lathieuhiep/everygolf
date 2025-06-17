@@ -42,9 +42,35 @@ function everygolf_get_page_link_info_by_template_file( $template_slug ): bool|a
     return false;
 }
 
+// Get URL Template Contact
 function everygolf_get_url_tpl_contact(): string
 {
     $page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-contact.php' );
 
     return $page ? $page['url'] : '#';
+}
+
+// Pagination
+function everygolf_pagination(): void {
+    $pagination = paginate_links(array(
+        'mid_size'           => 2,
+        'prev_text'          => '<i class="icon-arrow-left"></i>',
+        'next_text'          => '<i class="icon-arrow-right"></i>',
+        'screen_reader_text' => '&nbsp;', // ẩn text screen reader
+        'type'               => 'array',  // lấy về dạng mảng
+    ));
+
+    if ( is_array($pagination) ) :
+    ?>
+        <div class="pagination-wrap wow fadeInUp">
+            <ul class="pagination">
+                <?php foreach ( $pagination as $page ) : ?>
+                    <li>
+                        <?php echo $page; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php
+    endif;
 }

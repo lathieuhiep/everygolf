@@ -1,13 +1,13 @@
 <?php
-$class = ' header--transparent';
+$class = '';
 
 if ( is_page() ) :
     $current_page_id = get_the_ID();
 
     $style_menu = get_post_meta( $current_page_id, PREFIX_CMB_PAGE['menu'] . 'style', true );
 
-    if ( $style_menu == 'relative' ) {
-        $class = '';
+    if ( $style_menu == 'fixed' ) {
+        $class = ' header--transparent';
     }
 endif;
 ?>

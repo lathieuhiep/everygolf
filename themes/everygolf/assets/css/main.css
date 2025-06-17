@@ -10806,14 +10806,14 @@ textarea {
 .pagination a:hover {
   color: var(--color-primary);
 }
-.pagination .p-prev,
-.pagination .p-next {
+.pagination .prev,
+.pagination .next {
   border: 1px solid var(--color-primary);
   border-radius: 50%;
   color: var(--color-primary);
 }
-.pagination .p-prev:hover,
-.pagination .p-next:hover {
+.pagination .prev:hover,
+.pagination .next:hover {
   background-color: var(--color-primary);
   color: #000;
 }
