@@ -4,8 +4,8 @@ $title = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_INDOOR_SPACE . 'title'
 $indoor_list = get_post_meta(get_the_ID(), PREFIX_CMB_PAGE_HOME_INDOOR_SPACE . 'list', true);
 
 // get page template
-$academy_page = everygolf_get_page_link_info_by_template_file( 'page-templates/page-academy.php' );
-$academy_page_url = $academy_page ? $academy_page['url'] : '#';
+$page_id = get_post_meta( get_the_ID(), PREFIX_CMB_PAGE_HOME_INDOOR_SPACE . 'page_link', true );
+$page_url = $page_id ? get_permalink( $page_id ) : '#';
 ?>
 <section class="section sec-indoorSpace pb-0">
     <div class="container">
@@ -24,18 +24,18 @@ $academy_page_url = $academy_page ? $academy_page['url'] : '#';
                              data-md-wow-delay="<?php echo esc_attr( $index > 0 ? '.' : '' ) . esc_attr( 2 * $index) ?>s"
                              data-xl-wow-delay="<?php echo esc_attr( $index > 0 ? '.' : '' ) . esc_attr( 2 * $index) ?>s"
                         >
-                            <a href="<?php echo esc_url( $academy_page_url ); ?>" target="_blank" class="f-img">
+                            <a href="<?php echo esc_url( $page_url ); ?>" target="_blank" class="f-img">
                                 <?php echo wp_get_attachment_image( $item['img_id'], 'large' ); ?>
                             </a>
 
                             <div class="f-body">
                                 <h3 class="f-title uppercase">
-                                    <a href="<?php echo esc_url( $academy_page_url ); ?>"><?php echo esc_html( $item['title'] ); ?></a>
+                                    <a href="<?php echo esc_url( $page_url ); ?>"><?php echo esc_html( $item['title'] ); ?></a>
                                 </h3>
 
                                 <p class="f-sub title-sub"><?php echo esc_html( $item['sub_title'] ); ?></p>
 
-                                <a href="<?php echo esc_url( $academy_page_url ) ?>" target="_blank" class="f-btn"><i class="icon-arrow-right"></i></a>
+                                <a href="<?php echo esc_url( $page_url ) ?>" target="_blank" class="f-btn"><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

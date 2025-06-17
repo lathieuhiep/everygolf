@@ -69,4 +69,19 @@ function everygolf_cmb_block_indoor_space($prefix, $tpl_name): void
             ),
         ),
     ));
+
+    // section hyperlinks
+    $cmb_indoor_space_group->add_field( array(
+        'name' => esc_html__('Phần: Liên kết', 'everygolf'),
+        'type' => 'title',
+        'id'   => $prefix . 'section_hyperlinks',
+    ) );
+
+    $cmb_indoor_space_group->add_field( array(
+        'name'    => esc_html__('Liên kết đến trang', 'everygolf'),
+        'id'      => $prefix . 'page_link',
+        'type'    => 'select',
+        'options' => array( '' => esc_html__('— Không chọn —', 'everygolf') ) + wp_list_pluck( get_pages(), 'post_title', 'ID' ),
+        'placeholder' => esc_html__('Chọn một trang...', 'everygolf'),
+    ) );
 }

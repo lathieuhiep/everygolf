@@ -25,3 +25,22 @@ function everygolf_cmb_set_page_link($prefix): array
         ]
     ];
 }
+
+function everygolf_cmb_option_image($prefix): array
+{
+    return [
+        'name' => esc_html__('Ảnh', 'everygolf'),
+        'id' => $prefix . 'img',
+        'type' => 'file',
+        'preview_size' => array(300, 300),
+        'options' => array(
+            'url' => false,
+        ),
+        'text' => array(
+            'add_upload_file_text' => esc_html__('Chọn ảnh', 'everygolf'),
+        ),
+        'query_args' => array(
+            'type' => array('image/jpg', 'image/jpeg', 'image/png', 'image/webp'),
+        ),
+    ];
+}

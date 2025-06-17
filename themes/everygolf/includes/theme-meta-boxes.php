@@ -14,6 +14,7 @@ require get_theme_file_path( '/includes/meta-boxes/blocks/block-indoor-space.php
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-partner.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-query.php' );
 require get_theme_file_path( '/includes/meta-boxes/blocks/block-slide.php' );
+require get_theme_file_path( '/includes/meta-boxes/blocks/block-contact-info.php' );
 
 // require fields base
 require get_theme_file_path( '/includes/meta-boxes/cmb-field-base.php' );
@@ -31,3 +32,4 @@ require get_theme_file_path( '/includes/meta-boxes/page-academy-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-coach-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-learn-practice-mb.php' );
 require get_theme_file_path( '/includes/meta-boxes/page-setup-space-mb.php' );
+require get_theme_file_path( '/includes/meta-boxes/page-contact-mb.php' );
