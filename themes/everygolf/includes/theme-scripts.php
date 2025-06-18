@@ -38,7 +38,7 @@ function everygolf_enqueue_scripts(): void
     // enqueue style libs
     wp_enqueue_style('swiper-style', get_theme_file_uri('/assets/lib/swiper/swiper.min.css'), array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('slimselect-style', get_theme_file_uri('/assets/lib/slimselect/slimselect.css'), array(), wp_get_theme()->get('Version'));
-    wp_enqueue_style('fancybox-style', get_theme_file_uri('/assets/lib/fancybox/fancybox.css'), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('fancybox-style', get_theme_file_uri('/assets/lib/fancyBox/fancybox.css'), array(), wp_get_theme()->get('Version'));
 
     // enqueue style
     wp_enqueue_style('main-style', get_theme_file_uri('/assets/css/main.min.css'), array(), wp_get_theme()->get('Version'));
