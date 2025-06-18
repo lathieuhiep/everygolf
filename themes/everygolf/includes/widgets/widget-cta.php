@@ -33,18 +33,15 @@ class EveryGolf_CTA_Widget extends WP_Widget {
         }
 
         if ( !empty($menu) && is_nav_menu($menu) ) :
+            $menu_items = wp_get_nav_menu_items( $menu )
     ?>
         <div class="title-btn wow fadeInUp">
-            <?php
-            wp_nav_menu(array(
-                'menu' => $menu,
-                'container' => false,
-                'items_wrap' => '%3$s',
-                'fallback_cb' => false,
-                'depth' => 1,
-                'walker' => new EveryGolf_CTA_Menu_Walker(),
-            ));
-            ?>
+            <?php foreach ( $menu_items as $item ) : ?>
+            <a href="<?php echo esc_url( $item->url ) ?>" class="btn btn-icon-right">
+                <?php echo esc_html( $item->title ); ?>
+                <span><i class="icon-arrow-right"></i></span>
+            </a>
+            <?php endforeach; ?>
         </div>
     <?php
         endif;

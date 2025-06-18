@@ -40,7 +40,7 @@ $categories = get_categories( array(
                                             <a href="<?php echo esc_url(get_permalink($blog_page_id)); ?>"
                                                class="<?php echo ($is_blog_home && !$current_cat_id) ? 'current' : ''; ?>"
                                             >
-                                                <span><?php esc_html_e('Tất cả'); ?></span>
+                                                <span><?php esc_html_e('Tất cả', 'everygolf'); ?></span>
                                             </a>
                                         </li>
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SVN-Poppins";
   src: url("../fonts/SVN-Poppins/SVN-PoppinsBold.woff2") format("woff2"), url("../fonts/SVN-Poppins/SVN-PoppinsBold.woff") format("woff");
@@ -5774,6 +5775,80 @@ i {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* = WordPress Default Classes = */
+/* Ảnh có chú thích */
+.wp-caption {
+  max-width: 100%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.wp-caption img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Sticky post */
+.sticky {
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+/* Gallery caption */
+.gallery-caption {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Bài viết bởi tác giả */
+.bypostauthor {
+  font-weight: bold;
+}
+
+/* Canh chỉnh ảnh */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.screen-reader-text:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+  white-space: normal;
 }
 
 .btn {

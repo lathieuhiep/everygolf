@@ -72,7 +72,7 @@ if ( have_posts() ) :
     everygolf_pagination();
 else:
 ?>
-    <p><?php esc_html_e('Không có bài viết nào.', 'blankwp'); ?></p>
+    <p><?php esc_html_e('Không có bài viết nào.', 'everygolf'); ?></p>
 <?php
 endif;
 wp_reset_postdata();

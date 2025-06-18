@@ -11,6 +11,8 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php wp_body_open(); ?>
+
 <div class="page-wrapper"> <!-- open div class page-wrapper  -->
     <?php
     if ( !is_404() ) :

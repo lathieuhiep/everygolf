@@ -23,10 +23,7 @@
                     <div class="container">
                         <ul>
                             <li>
-                                <?php
-                                $copyright_text = __( $copyright, 'everygolf' );
-                                echo esc_html( $copyright_text );
-                                ?>
+                                <?php echo esc_html( $copyright ); ?>
                             </li>
 
                             <?php

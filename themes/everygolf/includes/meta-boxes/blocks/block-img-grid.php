@@ -45,7 +45,7 @@ function everygolf_cmb_block_img_grid(
     ];
     foreach ($everygolf_cmb_slogan as $key => $value) :
         $cmb_block_img_grid_group->add_field(array(
-            'name' => esc_html__('Phần: Slogan' . ' ' . $key + 1, 'everygolf'),
+            'name' => esc_html__('Phần: Slogan', 'everygolf') . ' ' . $key + 1,
             'type' => 'title',
             'id' => $prefix . 'sd_slogan_' . $key + 1,
         ));
