@@ -1,0 +1,1049 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EveryGolf\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-18 10:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.3.16\n"
+"X-Domain: everygolf"
+
+#: 404.php:12
+msgid "404"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:36
+msgid "<span>35+</span><br>Dự án thành công"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-slide.php:63
+msgid "Bạn có thể nhập thẻ <h2>...</h2> hoặc cả đoạn mã SVG."
+msgstr ""
+
+#: template-parts/tpl-coach/inc-tab-team.php:89
+msgid "chung-chi-"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:42
+msgid "Chuyên nghiệp"
+msgstr ""
+
+#: includes/theme-options/footer-options.php:9
+msgid "Chân trang"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:38
+msgid "Chúng tôi"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:70
+msgid "Chúng tôi <br>định hình nền công nghiệp Golf"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:51 includes/cpt/cpt-setup-space.php:51
+msgid "Chỉnh sửa danh mục"
+msgstr ""
+
+#: includes/meta-boxes/page-academy-mb.php:86
+msgid "Chọn bài cơ sở vật chất"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:74
+msgid "Chọn bài viết"
+msgstr ""
+
+#: includes/meta-boxes/page-academy-mb.php:37
+msgid "Chọn bài viết không gian"
+msgstr ""
+
+#: includes/theme-functions.php:88
+msgid "Chọn contact form"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:105
+#: includes/meta-boxes/page-learn-practice-mb.php:110
+msgid "Chọn danh mục hiển thị. Nhập tên để tìm kiếm."
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:36
+msgid "Chọn form liên hệ "
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:84
+msgid "Chọn không gian"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:13
+msgid "Chọn Kiểu Giao Diện"
+msgstr ""
+
+#: includes/meta-boxes/page-mb.php:19
+msgid "Chọn kiểu menu"
+msgstr ""
+
+#: includes/widgets/widget-cta.php:88
+msgid "Chọn menu"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:26
+#: includes/meta-boxes/page-contact-mb.php:138
+#: includes/meta-boxes/blocks/block-about-info.php:68
+#: includes/meta-boxes/blocks/block-course.php:145
+#: includes/meta-boxes/blocks/block-indoor-space.php:85
+msgid "Chọn một trang..."
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-query.php:64
+msgid "Chọn đội ngũ"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:43
+#: includes/meta-boxes/page-contact-mb.php:104
+#: includes/meta-boxes/page-learn-practice-mb.php:89
+#: includes/meta-boxes/page-setup-space-mb.php:52
+#: includes/meta-boxes/page-setup-space-mb.php:68
+#: includes/meta-boxes/blocks/block-about-hero.php:27
+#: includes/meta-boxes/blocks/block-about-hero.php:92
+#: includes/meta-boxes/blocks/block-about-history.php:70
+#: includes/meta-boxes/blocks/block-about-history.php:86
+#: includes/meta-boxes/blocks/block-banner-hero.php:60
+#: includes/meta-boxes/blocks/block-banner-hero.php:76
+#: includes/meta-boxes/blocks/block-img-grid.php:72
+#: includes/meta-boxes/blocks/block-indoor-space.php:64
+msgid "Chọn ảnh"
+msgstr ""
+
+#: includes/theme-options/general-options.php:14
+msgid "Chọn ảnh logo"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:114
+#: includes/meta-boxes/blocks/block-slide.php:50
+msgid "Chọn ảnh Mobile"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:98
+#: includes/meta-boxes/blocks/block-slide.php:34
+msgid "Chọn ảnh PC"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:16
+msgid "Chức danh / Vai trò"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:25
+#: template-parts/tpl-coach/inc-tab-team.php:63
+msgid "Chứng chỉ"
+msgstr ""
+
+#: includes/theme-options/footer-options.php:15
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:10 includes/theme-options/footer-options.php:23
+msgid "Copyright @ 2025 Everygolf"
+msgstr ""
+
+#: includes/theme-options/general-options.php:7
+msgid "Cài đặt chung"
+msgstr ""
+
+#: includes/theme-options.php:18
+msgid "Cài đặt theme"
+msgstr ""
+
+#: includes/cpt/cpt-facility.php:5 includes/cpt/cpt-facility.php:6
+#: includes/cpt/cpt-facility.php:7 includes/cpt/cpt-facility.php:8
+#: includes/cpt/cpt-facility.php:21 includes/meta-boxes/page-academy-mb.php:58
+msgid "Cơ sở vật chất"
+msgstr ""
+
+#: includes/meta-boxes/page-academy-mb.php:30
+msgid "Cơ sở<br>hoạt động"
+msgstr ""
+
+#: includes/theme-options.php:27
+msgid "Cảm ơn bạn đã sử dụng theme của tôi"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:52 includes/cpt/cpt-setup-space.php:52
+msgid "Cập nhật danh mục"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:46 includes/cpt/cpt-course.php:55
+#: includes/cpt/cpt-setup-space.php:46 includes/cpt/cpt-setup-space.php:55
+#: includes/meta-boxes/cmb-field-base.php:95
+msgid "Danh mục"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:49 includes/cpt/cpt-setup-space.php:49
+msgid "Danh mục cha"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:50 includes/cpt/cpt-setup-space.php:50
+msgid "Danh mục cha:"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:45
+#: includes/meta-boxes/page-learn-practice-mb.php:104
+msgid "Danh mục khóa học"
+msgstr ""
+
+#: includes/cpt/cpt-setup-space.php:45
+msgid "Danh mục không gian"
+msgstr ""
+
+#: includes/meta-boxes/cpt-facility-mb.php:25
+#: includes/meta-boxes/page-contact-mb.php:62
+#: includes/meta-boxes/page-learn-practice-mb.php:51
+#: includes/meta-boxes/blocks/block-about-history.php:12
+#: includes/meta-boxes/blocks/block-indoor-space.php:22
+#: includes/meta-boxes/blocks/block-slide.php:12
+msgid "Danh sách"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:45
+msgid "Danh sách chữ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:32
+msgid "Danh sách khóa học"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-count-up.php:12
+msgid "Danh sách thống kê"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:19
+msgid "Danh sách tiêu đề"
+msgstr ""
+
+#: includes/theme-options/general-options.php:23
+#: includes/meta-boxes/blocks/block-contact-info.php:35
+msgid "Email liên hệ"
+msgstr ""
+
+#. Name of the theme
+msgid "EveryGolf"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:57
+msgid "Facebook"
+msgstr ""
+
+#: includes/meta-boxes/page-mb.php:23
+msgid "Fixed"
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:26
+msgid "Gallery"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:148
+#: includes/meta-boxes/blocks/block-query.php:58
+msgid "Giảm dần (mới trước)"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:59
+msgid "Hiển thị trên mobile"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:13
+msgid "Hiển thị trên pc"
+msgstr ""
+
+#. URI of the theme
+msgid "https://github.com/lathieuhiep/everygolf"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.facebook.com/lathieuhiep/"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-coach.php:2 includes/cpt/cpt-coach.php:5
+#: includes/cpt/cpt-coach.php:6 includes/cpt/cpt-coach.php:7
+#: includes/cpt/cpt-coach.php:8 includes/cpt/cpt-coach.php:21
+msgid "Huấn luyện viên"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-learn-practice.php:2
+msgid "Học & Luyện tập"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-academy.php:2
+msgid "Học viện"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:24
+msgid "Học<br>Tập luyện<br>Chia sẻ<br>Đấu giải"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:134
+#: includes/meta-boxes/blocks/block-query.php:44
+msgid "ID"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:6 includes/cpt/cpt-course.php:7
+#: includes/cpt/cpt-course.php:8 includes/cpt/cpt-course.php:9
+#: includes/cpt/cpt-course.php:22
+msgid "Khóa học"
+msgstr ""
+
+#: template-parts/components/inc-post-list.php:75
+msgid "Không có bài viết nào."
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:17 includes/cpt/cpt-course.php:18
+#: includes/cpt/cpt-facility.php:17 includes/cpt/cpt-setup-space.php:18
+msgid "Không có trong thùng rác"
+msgstr ""
+
+#: includes/cpt/cpt-setup-space.php:6 includes/cpt/cpt-setup-space.php:7
+#: includes/cpt/cpt-setup-space.php:8 includes/cpt/cpt-setup-space.php:9
+#: includes/cpt/cpt-setup-space.php:22
+msgid "Không gian"
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:16 includes/cpt/cpt-course.php:17
+#: includes/cpt/cpt-facility.php:16 includes/cpt/cpt-setup-space.php:17
+msgid "Không tìm thấy"
+msgstr ""
+
+#: search.php:34
+msgid "Không tìm thấy kết quả nào."
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-query.php:14
+msgid "Khối:"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:6
+msgid "Khối: Banner hero"
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:46
+msgid "Khối: Cơ sở"
+msgstr ""
+
+#: includes/meta-boxes/page-academy-mb.php:21
+msgid "Khối: Cơ sở hoạt động"
+msgstr ""
+
+#: includes/meta-boxes/page-academy-mb.php:49
+msgid "Khối: Cơ sở vật chất"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:45
+msgid "Khối: Danh sách khóa học"
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:20
+msgid "Khối: Form liên hệ (CF7)"
+msgstr ""
+
+#: includes/meta-boxes/page-coach-mb.php:15
+#: includes/meta-boxes/blocks/block-about-hero.php:6
+msgid "Khối: Giới thiệu"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:13
+#: includes/meta-boxes/page-setup-space-mb.php:12
+msgid "Khối: Hero"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:10
+msgid "Khối: Image grid"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:6
+msgid "Khối: Khóa học"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:78
+msgid "Khối: Không gian"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-indoor-space.php:6
+msgid "Khối: Không gian trong nhà"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-history.php:6
+msgid "Khối: Lịch sử"
+msgstr ""
+
+#: includes/meta-boxes/page-mb.php:13
+msgid "Khối: Menu"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-slide.php:6
+msgid "Khối: Slide"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:6
+msgid "Khối: Thông tin"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:10
+#: includes/meta-boxes/cpt-facility-mb.php:10
+#: includes/meta-boxes/cpt-setup-space-mb.php:11
+msgid "Khối: Thông tin bổ sung"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:11
+msgid "Khối: Thông tin liên hệ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-count-up.php:6
+msgid "Khối: Thống kê"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-partner.php:6
+msgid "Khối: Đối tác"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:17
+msgid "Kiểu 1"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:18
+msgid "Kiểu 2"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-count-up.php:47
+msgid "Ký hiệu sau số"
+msgstr ""
+
+#: search.php:11
+#, php-format
+msgid "Kết quả tìm kiếm cho: %s"
+msgstr ""
+
+#. Author of the theme
+msgid "La Thiếu Hiệp"
+msgstr ""
+
+#: includes/widgets/widget-cta.php:63
+msgid "Let's choose <br>your service"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-contact.php:2
+msgid "Liên hệ"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:22
+#: includes/meta-boxes/page-contact-mb.php:134
+#: includes/meta-boxes/blocks/block-about-info.php:64
+#: includes/meta-boxes/blocks/block-course.php:141
+#: includes/meta-boxes/blocks/block-indoor-space.php:81
+msgid "Liên kết đến trang"
+msgstr ""
+
+#: includes/theme-setup.php:31
+msgid "Menu chân trang"
+msgstr ""
+
+#: includes/theme-setup.php:29
+msgid "Menu chính"
+msgstr ""
+
+#: includes/theme-setup.php:30
+msgid "Menu chính (Mobile)"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-history.php:44
+msgid "MM / YYYY"
+msgstr ""
+
+#: includes/meta-boxes/cpt-facility-mb.php:51
+#: includes/meta-boxes/page-academy-mb.php:71
+#: includes/meta-boxes/blocks/block-about-history.php:49
+#: includes/meta-boxes/blocks/block-about-info.php:33
+#: includes/meta-boxes/blocks/block-banner-hero.php:32
+#: includes/meta-boxes/blocks/block-course.php:71
+#: includes/meta-boxes/blocks/block-img-grid.php:29
+msgid "Mô tả"
+msgstr ""
+
+#: template-parts/content-archive.php:81
+msgid "MỌI NHU CẦU XUẤT BẢN VUI LÒNG LIÊN HỆ email"
+msgstr ""
+
+#. Description of the theme
+msgid "Một theme WordPress trắng cơ bản để tùy chỉnh và ghép HTML."
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:11 includes/cpt/cpt-course.php:12
+#: includes/cpt/cpt-facility.php:11 includes/cpt/cpt-setup-space.php:12
+msgid "Mới"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:135
+#: includes/meta-boxes/blocks/block-query.php:45
+msgid "Ngày đăng"
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:29
+msgid "Nhận tư vấn"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:20
+msgid "Nhập chức danh"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:33
+msgid "Nhập chứng chỉ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:40
+msgid "Nhập email"
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:58
+#: includes/meta-boxes/cpt-setup-space-mb.php:67
+msgid "Nhập giá trị"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-count-up.php:51
+msgid "Nhập ký hiệu"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:66
+#: includes/meta-boxes/cpt-facility-mb.php:45
+#: includes/meta-boxes/page-about-us-mb.php:38
+#: includes/meta-boxes/page-academy-mb.php:77
+#: includes/meta-boxes/page-coach-mb.php:53
+#: includes/meta-boxes/page-contact-mb.php:31
+#: includes/meta-boxes/page-contact-mb.php:57
+#: includes/meta-boxes/page-home-mb.php:37
+#: includes/meta-boxes/page-learn-practice-mb.php:26
+#: includes/meta-boxes/page-learn-practice-mb.php:38
+#: includes/meta-boxes/page-setup-space-mb.php:25
+#: includes/meta-boxes/page-setup-space-mb.php:38
+#: includes/meta-boxes/blocks/block-about-hero.php:50
+#: includes/meta-boxes/blocks/block-about-history.php:32
+#: includes/meta-boxes/blocks/block-about-history.php:55
+#: includes/meta-boxes/blocks/block-about-info.php:26
+#: includes/meta-boxes/blocks/block-about-info.php:40
+#: includes/meta-boxes/blocks/block-banner-hero.php:24
+#: includes/meta-boxes/blocks/block-banner-hero.php:38
+#: includes/meta-boxes/blocks/block-img-grid.php:35
+#: includes/meta-boxes/blocks/block-indoor-space.php:17
+#: includes/meta-boxes/blocks/block-slide.php:65
+msgid "Nhập nội dung"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:59
+msgid "Nhập slogan"
+msgstr ""
+
+#: includes/meta-boxes/page-coach-mb.php:28
+#: includes/meta-boxes/page-contact-mb.php:81
+#: includes/meta-boxes/page-learn-practice-mb.php:76
+#: includes/meta-boxes/blocks/block-about-hero.php:40
+#: includes/meta-boxes/blocks/block-about-hero.php:72
+#: includes/meta-boxes/blocks/block-count-up.php:31
+#: includes/meta-boxes/blocks/block-course.php:57
+#: includes/meta-boxes/blocks/block-indoor-space.php:41
+#: includes/meta-boxes/blocks/block-partner.php:19
+msgid "Nhập tiêu đề"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:18
+#: includes/meta-boxes/blocks/block-about-info.php:59
+msgid "Nhập tiêu đề liên kết"
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:21
+#: includes/meta-boxes/page-contact-mb.php:91
+#: includes/meta-boxes/blocks/block-course.php:66
+#: includes/meta-boxes/blocks/block-indoor-space.php:51
+msgid "Nhập tiêu đề phụ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:51
+#: includes/meta-boxes/blocks/block-contact-info.php:62
+msgid "Nhập url"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:136
+msgid "Nhập văn bản"
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:118
+msgid "Nhập địa chỉ"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:31
+#: includes/theme-options/footer-options.php:21
+msgid "Nội dung"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:13
+msgid "Phần 1: Hiển thị"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:47
+msgid "Phần 1: Nội dung"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:48
+msgid "Phần 2: Liên kết"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:84
+msgid "Phần 2: Media"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:46
+msgid "Phần: Background"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:66
+msgid "Phần: Banner"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:98
+msgid "Phần: Chọn khóa học"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:8
+#: includes/meta-boxes/page-contact-mb.php:128
+#: includes/meta-boxes/blocks/block-course.php:125
+#: includes/meta-boxes/blocks/block-indoor-space.php:75
+msgid "Phần: Liên kết"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:13
+#: includes/meta-boxes/blocks/block-img-grid.php:23
+msgid "Phần: Nội dung"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:48
+msgid "Phần: Slogan"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:36
+msgid "Ready<br>For..."
+msgstr ""
+
+#: includes/meta-boxes/page-mb.php:24
+msgid "Relative"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:23
+msgid "Setup<br>phòng golf<br>tại nơi<br>bạn muốn<br>tại..."
+msgstr ""
+
+#: includes/theme-sidebar.php:10
+msgid "Sidebar CTA"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:130
+msgid "Sắp xếp bài theo"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-query.php:40
+msgid "Sắp xếp theo"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:118
+msgid "Số lượng bài hiển thị"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-query.php:28
+msgid "Số lượng hiển thị"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-count-up.php:36
+msgid "Số đếm"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:83
+#: includes/meta-boxes/page-setup-space-mb.php:89
+#: includes/meta-boxes/blocks/block-query.php:69
+msgid ""
+"Sử dụng thì số lượng và sắp xếp sẽ nhận theo trường này. Nhập tên để tìm "
+"kiếm."
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:12 includes/cpt/cpt-course.php:13
+#: includes/cpt/cpt-facility.php:12 includes/cpt/cpt-setup-space.php:13
+msgid "Sửa"
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:63
+msgid "Tham số"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-setup-space.php:2
+msgid "Thiết lập không gian"
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:9 includes/cpt/cpt-coach.php:10
+#: includes/cpt/cpt-course.php:10 includes/cpt/cpt-course.php:11
+#: includes/cpt/cpt-facility.php:9 includes/cpt/cpt-facility.php:10
+#: includes/cpt/cpt-setup-space.php:10 includes/cpt/cpt-setup-space.php:11
+#: includes/meta-boxes/cpt-coach-mb.php:30
+#: includes/meta-boxes/cpt-coach-mb.php:46
+#: includes/meta-boxes/cpt-facility-mb.php:32
+#: includes/meta-boxes/cpt-setup-space-mb.php:34
+#: includes/meta-boxes/cpt-setup-space-mb.php:47
+#: includes/meta-boxes/page-contact-mb.php:69
+#: includes/meta-boxes/page-learn-practice-mb.php:58
+#: includes/meta-boxes/blocks/block-about-hero.php:53
+#: includes/meta-boxes/blocks/block-about-history.php:19
+#: includes/meta-boxes/blocks/block-banner-hero.php:27
+#: includes/meta-boxes/blocks/block-count-up.php:19
+#: includes/meta-boxes/blocks/block-course.php:39
+#: includes/meta-boxes/blocks/block-indoor-space.php:29
+#: includes/meta-boxes/blocks/block-partner.php:33
+#: includes/meta-boxes/blocks/block-slide.php:19
+msgid "Thêm"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:53 includes/cpt/cpt-setup-space.php:53
+msgid "Thêm danh mục mới"
+msgstr ""
+
+#: components/header/nav-mobile.php:16 components/header/nav.php:14
+msgid "Thêm Menu"
+msgstr ""
+
+#: includes/theme-sidebar.php:12
+msgid "Thêm widget sử dụng cho sidebar."
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:40
+msgid "Thông số"
+msgstr ""
+
+#: template-parts/components/inc-related-post.php:19
+msgid "Thông tin gần đây"
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:38
+#: includes/meta-boxes/blocks/block-partner.php:25
+msgid "Thư viện ảnh (Gallery)"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-history.php:38
+msgid "Thời gian"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-query.php:53
+msgid "Thứ tự sắp xếp"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:143
+msgid "Thứ tự sắp xếp bài"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:137
+#: includes/meta-boxes/blocks/block-query.php:47
+msgid "Thứ tự tùy chỉnh"
+msgstr ""
+
+#: search.php:35
+msgid "Thử lại với từ khóa khác."
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:55
+#: includes/meta-boxes/cpt-facility-mb.php:39
+#: includes/meta-boxes/page-coach-mb.php:21
+#: includes/meta-boxes/page-coach-mb.php:46
+#: includes/meta-boxes/page-contact-mb.php:26
+#: includes/meta-boxes/page-contact-mb.php:52
+#: includes/meta-boxes/page-contact-mb.php:76
+#: includes/meta-boxes/page-contact-mb.php:79
+#: includes/meta-boxes/page-home-mb.php:30
+#: includes/meta-boxes/page-learn-practice-mb.php:19
+#: includes/meta-boxes/page-learn-practice-mb.php:72
+#: includes/meta-boxes/page-learn-practice-mb.php:136
+#: includes/meta-boxes/page-setup-space-mb.php:18
+#: includes/meta-boxes/blocks/block-about-hero.php:35
+#: includes/meta-boxes/blocks/block-about-hero.php:65
+#: includes/meta-boxes/blocks/block-about-history.php:26
+#: includes/meta-boxes/blocks/block-about-info.php:19
+#: includes/meta-boxes/blocks/block-count-up.php:26
+#: includes/meta-boxes/blocks/block-count-up.php:29
+#: includes/meta-boxes/blocks/block-course.php:53
+#: includes/meta-boxes/blocks/block-indoor-space.php:12
+#: includes/meta-boxes/blocks/block-indoor-space.php:36
+#: includes/meta-boxes/blocks/block-indoor-space.php:39
+#: includes/meta-boxes/blocks/block-partner.php:12
+#: includes/meta-boxes/blocks/block-query.php:46
+msgid "Tiêu đề"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-slide.php:58
+msgid "Tiêu đề (HTML hoặc SVG)"
+msgstr ""
+
+#: includes/meta-boxes/cpt-facility-mb.php:20
+msgid "Tiêu đề bổ trợ"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:13
+#: includes/meta-boxes/blocks/block-about-info.php:54
+msgid "Tiêu đề liên kết"
+msgstr ""
+
+#: includes/meta-boxes/cpt-facility-mb.php:16
+#: includes/meta-boxes/cpt-setup-space-mb.php:17
+#: includes/meta-boxes/page-academy-mb.php:65
+#: includes/meta-boxes/page-academy-mb.php:66
+#: includes/meta-boxes/page-contact-mb.php:86
+#: includes/meta-boxes/page-contact-mb.php:89
+#: includes/meta-boxes/page-learn-practice-mb.php:31
+#: includes/meta-boxes/blocks/block-course.php:62
+#: includes/meta-boxes/blocks/block-indoor-space.php:46
+#: includes/meta-boxes/blocks/block-indoor-space.php:49
+msgid "Tiêu đề phụ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:54
+msgid "Tiêu đề slogan"
+msgstr ""
+
+#: includes/widgets/widget-cta.php:74
+msgid "Tiêu đề:"
+msgstr ""
+
+#: includes/meta-boxes/cpt-setup-space-mb.php:54
+msgid "Tiện ích"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-home.php:2
+msgid "Trang chủ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:46
+msgid "Trang website"
+msgstr ""
+
+#: includes/theme-functions.php:9
+msgid "Trang:"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:44
+msgid "Tâm huyết"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:54 includes/cpt/cpt-setup-space.php:54
+msgid "Tên danh mục mới"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:57
+msgid "Tìm hiểu"
+msgstr ""
+
+#: template-parts/home/inc-coach.php:63 template-parts/home/inc-coach.php:112
+msgid "Tìm hiểu thêm"
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:15 includes/cpt/cpt-course.php:16
+#: includes/cpt/cpt-facility.php:15 includes/cpt/cpt-setup-space.php:16
+msgid "Tìm kiếm"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:47 includes/cpt/cpt-setup-space.php:47
+msgid "Tìm kiếm danh mục"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:147
+#: includes/meta-boxes/blocks/block-query.php:57
+msgid "Tăng dần (cũ trước)"
+msgstr ""
+
+#: includes/theme-functions.php:95
+msgid "Tạo form CF7"
+msgstr ""
+
+#: template-parts/content-archive.php:43 includes/cpt/cpt-coach.php:14
+#: includes/cpt/cpt-course.php:15 includes/cpt/cpt-facility.php:14
+#: includes/cpt/cpt-setup-space.php:15
+msgid "Tất cả"
+msgstr ""
+
+#: includes/cpt/cpt-course.php:48 includes/cpt/cpt-setup-space.php:48
+msgid "Tất cả danh mục"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-img-grid.php:43
+msgid "Tận tâm"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:30
+msgid "Ví dụ: +84 868 336 368"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:131
+msgid "Văn bản liên kết"
+msgstr ""
+
+#. Name of the template
+#: page-templates/page-about-us.php:2
+msgid "Về chúng tôi"
+msgstr ""
+
+#: 404.php:17
+msgid "Về trang chủ"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:38
+msgid ""
+"Với mong muốn cải tiến và định hình nền công nghiệp golf Việt Nam bằng sự đa "
+"dạng về dịch vụ. Everygolf cung cấp những giải pháp hiệu quả với nền tảng "
+"kiến thức sâu rộng của các chuyên gia hàng đầu."
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:55
+#: includes/meta-boxes/blocks/block-indoor-space.php:15
+msgid "Welcome to the great indoors"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-info.php:24
+msgid "When Golf<br>Passion<br>meet technology"
+msgstr ""
+
+#: includes/widgets/widget-cta.php:11
+msgid "Widget hiển thị tiêu đề và các nút kêu gọi hành động."
+msgstr ""
+
+#: includes/cpt/cpt-coach.php:13 includes/cpt/cpt-course.php:14
+#: includes/cpt/cpt-facility.php:13 includes/cpt/cpt-setup-space.php:14
+msgid "Xem"
+msgstr ""
+
+#: 404.php:13
+msgid "Xin lỗi, trang bạn đang tìm kiếm không tồn tại."
+msgstr ""
+
+#: includes/meta-boxes/cpt-coach-mb.php:47
+#: includes/meta-boxes/cpt-facility-mb.php:33
+#: includes/meta-boxes/cpt-setup-space-mb.php:35
+#: includes/meta-boxes/cpt-setup-space-mb.php:48
+#: includes/meta-boxes/page-contact-mb.php:70
+#: includes/meta-boxes/page-learn-practice-mb.php:59
+#: includes/meta-boxes/blocks/block-about-history.php:20
+#: includes/meta-boxes/blocks/block-count-up.php:20
+#: includes/meta-boxes/blocks/block-course.php:40
+#: includes/meta-boxes/blocks/block-indoor-space.php:30
+#: includes/meta-boxes/blocks/block-partner.php:34
+#: includes/meta-boxes/blocks/block-slide.php:20
+msgid "Xóa"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-contact-info.php:25
+msgid "Điện thoại"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:16
+#: template-parts/tpl-learn-practice/inc-course-list.php:119
+#: template-parts/tpl-setup-space/inc-room-setup.php:84
+#: includes/meta-boxes/blocks/block-course.php:134
+msgid "Đăng ký"
+msgstr ""
+
+#: includes/meta-boxes/page-contact-mb.php:112
+#: template-parts/tpl-contact/inc-facilities.php:43
+msgid "Địa chỉ"
+msgstr ""
+
+#: template-parts/components/inc-post-featured.php:77
+#: template-parts/components/inc-post-list.php:60
+#: template-parts/components/inc-related-post.php:61
+msgid "Đọc thêm"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-partner.php:17
+msgid "Đối tác <br>của chúng tôi"
+msgstr ""
+
+#: includes/meta-boxes/page-about-us-mb.php:31
+#: includes/meta-boxes/page-coach-mb.php:41
+#: includes/meta-boxes/page-home-mb.php:25
+msgid "Đội ngũ"
+msgstr ""
+
+#: includes/meta-boxes/page-coach-mb.php:26
+msgid "Đội ngũ <br>huấn luyện viên tại Everygolf"
+msgstr ""
+
+#: includes/meta-boxes/page-coach-mb.php:51
+msgid "Đội ngũ chuyên gia"
+msgstr ""
+
+#: includes/meta-boxes/page-home-mb.php:35
+msgid "Đội ngũ<br>chuyên gia"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:35
+#: includes/meta-boxes/page-contact-mb.php:96
+#: includes/meta-boxes/blocks/block-about-hero.php:19
+#: includes/meta-boxes/blocks/block-about-hero.php:84
+#: includes/meta-boxes/blocks/block-img-grid.php:64
+#: includes/meta-boxes/blocks/block-indoor-space.php:56
+msgid "Ảnh"
+msgstr ""
+
+#: includes/meta-boxes/page-learn-practice-mb.php:81
+msgid "Ảnh banner"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-hero.php:78
+#: includes/meta-boxes/blocks/block-about-history.php:62
+msgid "Ảnh chính"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:68
+msgid "Ảnh MB"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:106
+#: includes/meta-boxes/blocks/block-slide.php:42
+msgid "Ảnh nền Mobile"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:60
+msgid "Ảnh nền mobile"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-course.php:90
+#: includes/meta-boxes/blocks/block-slide.php:26
+msgid "Ảnh nền PC"
+msgstr ""
+
+#: includes/meta-boxes/page-setup-space-mb.php:44
+msgid "Ảnh nền pc"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-banner-hero.php:52
+msgid "Ảnh PC"
+msgstr ""
+
+#: includes/meta-boxes/blocks/block-about-history.php:78
+msgid "Ảnh phụ"
+msgstr ""
+
+#: includes/meta-boxes/cmb-field-base.php:25
+#: includes/meta-boxes/page-contact-mb.php:137
+#: includes/meta-boxes/blocks/block-about-info.php:67
+#: includes/meta-boxes/blocks/block-course.php:144
+#: includes/meta-boxes/blocks/block-indoor-space.php:84
+msgid "— Không chọn —"
+msgstr ""
