@@ -1,9 +1,19 @@
-<?php
-if ( ! is_active_sidebar( 'sidebar-main' ) ) {
-    return;
-}
-?>
+<?php if ( ! is_active_sidebar( 'sidebar-cta' ) ) return; ?>
 
-<aside id="secondary" class="widget-area">
-    <?php dynamic_sidebar( 'sidebar-main' ); ?>
-</aside>
+<section class="section sec-homeCTA">
+    <div class="item-wrap">
+        <div class="item-bg">
+            <video src="<?php echo esc_url( get_theme_file_uri( '/assets/videos/bg_loop_2.mp4' ) ) ?>" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="item-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3">
+                        <?php dynamic_sidebar( 'sidebar-cta' ); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

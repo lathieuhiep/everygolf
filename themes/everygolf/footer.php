@@ -1,3 +1,8 @@
+    <?php
+    if ( !is_404() ) :
+        get_sidebar();
+    endif;
+    ?>
     </main> <!-- close main class page-content -->
 
     <?php

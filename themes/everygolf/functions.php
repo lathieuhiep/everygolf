@@ -25,3 +25,6 @@ require get_theme_file_path( '/includes/theme-options.php' );
 
 // Required: Theme Meta Boxes
 require get_parent_theme_file_path( '/includes/theme-meta-boxes.php' );
+
+// Required: Widgets
+require get_parent_theme_file_path( '/includes/widgets/widget-cta.php' );
