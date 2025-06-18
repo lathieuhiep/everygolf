@@ -9,7 +9,7 @@ $sub_title = get_post_meta(get_the_ID(), $prefix_cmb . 'sub_title', true);
 $desc = get_post_meta(get_the_ID(), $prefix_cmb . 'desc', true);
 
 // query
-$query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_facility');
+$query = everygolf_cmb_query_post_in($prefix_cmb, 'eg_facility');
 ?>
 <section class="section sec-HVVatChat">
     <div class="container">
@@ -66,7 +66,7 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_facility');
                                     <?php if ( !empty( $post_info ) ) : ?>
                                         <div class="accordion">
                                             <?php foreach ( $post_info as $key => $item ) : ?>
-                                                <div class="accordion__panel wow fadeInUp<?php echo esc_attr( $key == 0 ? 'active show' : '' ); ?>">
+                                                <div class="accordion__panel wow fadeInUp<?php echo esc_attr( $key == 0 ? ' active show' : '' ); ?>">
                                                     <h3 class="accordion__title">
                                                         <?php echo esc_html( $item['title'] ); ?>
                                                         <span>

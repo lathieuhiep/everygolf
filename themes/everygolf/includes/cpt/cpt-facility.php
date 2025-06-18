@@ -29,25 +29,25 @@ function everygolf_register_cpt_facility(): void
         'capability_type' => 'post',
         'has_archive' => false,
         'hierarchical' => false,
-        'menu_position' => 3,
+        'menu_position' => 5,
         'menu_icon' => 'dashicons-admin-multisite',
         'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
         'show_in_rest' => true,
     );
 
-    register_post_type('everygolf_facility', $args);
+    register_post_type('eg_facility', $args);
 }
 
 add_action('init', 'everygolf_register_cpt_facility');
 
 // Add custom columns post type in the admin area
-add_filter( 'manage_everygolf_facility_posts_columns', function( $columns ) {
+add_filter( 'manage_eg_facility_posts_columns', function( $columns ) {
     $columns['menu_order'] = 'Thứ tự';
     return $columns;
 } );
 
 // Display the menu order in the custom column
-add_action( 'manage_everygolf_facility_posts_custom_column', function( $column, $post_id ) {
+add_action( 'manage_eg_facility_posts_custom_column', function( $column, $post_id ) {
     if ( 'menu_order' === $column ) {
         echo get_post_field( 'menu_order', $post_id );
     }

@@ -6,6 +6,10 @@ $prefix_cmb = $args['prefix_cmb'];
 $style = get_post_meta( get_the_ID(), $prefix_cmb . 'style', true );
 $courseList = get_post_meta( get_the_ID(), $prefix_cmb . 'list', true );
 
+$text_link = get_post_meta( get_the_ID(), $prefix_cmb . 'text_link', true );
+$page_id = get_post_meta( get_the_ID(), $prefix_cmb . 'page_link', true );
+$page_url = $page_id ? get_permalink( $page_id ) : '';
+
 if ( empty( $courseList ) ) return false;
 ?>
 <section class="section sec-homeKhoaHoc <?php echo esc_attr( $style ) ?>">
@@ -33,14 +37,16 @@ if ( empty( $courseList ) ) return false;
                                                 </div>
                                             <?php endif; ?>
 
-                                            <div class="title-btn">
-                                                <a href="<?php echo esc_url( $item['btn_link'] ); ?>"
-                                                   class="btn btn-icon-right<?php echo esc_attr( $style == 'style-1' ? ' btn-fixLink' : '' ) ?>"
-                                                >
-                                                    <?php echo esc_html( $item['btn_text'] ); ?>
-                                                    <span><i class="icon-arrow-right"></i></span>
-                                                </a>
-                                            </div>
+                                            <?php if ( $page_url ) : ?>
+                                                <div class="title-btn">
+                                                    <a href="<?php echo esc_url( $page_url ); ?>"
+                                                       class="btn btn-icon-right<?php echo esc_attr( $style == 'style-1' ? ' btn-fixLink' : '' ) ?>"
+                                                    >
+                                                        <?php echo esc_html( $text_link ); ?>
+                                                        <span><i class="icon-arrow-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>

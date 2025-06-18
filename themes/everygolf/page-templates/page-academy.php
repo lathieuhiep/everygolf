@@ -10,7 +10,7 @@ get_template_part( 'template-parts/components/inc', 'banner-hero', array(
 ) );
 
 get_template_part( 'template-parts/components/inc', 'academy-list', array(
-    'prefix_cmb' => PREFIX_CMB_PAGE_ACADEMY['cpt']
+    'prefix_cmb' => PREFIX_CMB_PAGE_ACADEMY['location']
 ) );
 
 get_template_part( 'template-parts/components/inc', 'facility', array(

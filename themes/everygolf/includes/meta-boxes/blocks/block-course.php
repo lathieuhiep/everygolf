@@ -1,5 +1,5 @@
 <?php
-function everygolf_cmb_block_course($prefix, $tpl_name): void
+function everygolf_cmb_block_course($prefix, $tpl_name, $extra_fields_top = [], $extra_fields_bottom = []): void
 {
     $cmb_block_course_group = new_cmb2_box(array(
         'id' => $prefix . 'group',
@@ -9,16 +9,23 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
     ));
 
     // style select
-    $cmb_block_course_group->add_field( array(
-        'name'    => esc_html__( 'Chọn Kiểu Giao Diện', 'everygolf' ),
-        'id'      => $prefix . 'style',
-        'type'    => 'select',
+    $cmb_block_course_group->add_field(array(
+        'name' => esc_html__('Chọn Kiểu Giao Diện', 'everygolf'),
+        'id' => $prefix . 'style',
+        'type' => 'select',
         'options' => array(
-            'style-1' => esc_html__( 'Kiểu 1', 'everygolf' ),
-            'style-2' => esc_html__( 'Kiểu 2', 'everygolf' ),
+            'style-1' => esc_html__('Kiểu 1', 'everygolf'),
+            'style-2' => esc_html__('Kiểu 2', 'everygolf'),
         ),
         'default' => 'style-1',
-    ) );
+    ));
+
+    // add fields top
+    if (!empty($extra_fields_top) && is_array($extra_fields_top)) {
+        foreach ($extra_fields_top as $field) {
+            $cmb_block_course_group->add_field($field);
+        }
+    }
 
     // Add fields to the group course list
     $cmb_block_course_group->add_field(array(
@@ -110,33 +117,38 @@ function everygolf_cmb_block_course($prefix, $tpl_name): void
                     'type' => array('image/jpg', 'image/jpeg', 'image/png', 'image/webp'),
                 ),
             ),
-
-            // section display link
-            array(
-                'name' => esc_html__('Phần 3: liên kết', 'everygolf'),
-                'type' => 'title',
-                'id' => 'section_display_link',
-            ),
-
-            array(
-                'name' => esc_html__('Văn bản', 'everygolf'),
-                'id' => 'btn_text',
-                'type' => 'text',
-                'default' => esc_html__('Đăng ký', 'everygolf'),
-                'attributes' => array(
-                    'placeholder' => esc_html__('Nhập văn bản', 'everygolf'),
-                ),
-            ),
-
-            array(
-                'name' => esc_html__('Đường dẫn', 'everygolf'),
-                'id' => 'btn_link',
-                'type' => 'text',
-                'default' => '#',
-                'attributes' => array(
-                    'placeholder' => esc_html__('Nhập đường dẫn', 'everygolf'),
-                ),
-            ),
         ),
     ));
+
+    // section hyperlinks
+    $cmb_block_course_group->add_field(array(
+        'name' => esc_html__('Phần: Liên kết', 'everygolf'),
+        'type' => 'title',
+        'id' => $prefix . 'section_hyperlinks',
+    ));
+
+    $cmb_block_course_group->add_field(array(
+        'name' => esc_html__('Văn bản liên kết', 'everygolf'),
+        'id' => $prefix . 'text_link',
+        'type' => 'text',
+        'default' => esc_html__('Đăng ký', 'everygolf'),
+        'attributes' => array(
+            'placeholder' => esc_html__('Nhập văn bản', 'everygolf'),
+        ),
+    ));
+
+    $cmb_block_course_group->add_field(array(
+        'name' => esc_html__('Liên kết đến trang', 'everygolf'),
+        'id' => $prefix . 'page_link',
+        'type' => 'select',
+        'options' => array('' => esc_html__('— Không chọn —', 'everygolf')) + wp_list_pluck(get_pages(), 'post_title', 'ID'),
+        'placeholder' => esc_html__('Chọn một trang...', 'everygolf'),
+    ));
+
+    // add fields bottom
+    if (!empty($extra_fields_bottom) && is_array($extra_fields_bottom)) {
+        foreach ($extra_fields_bottom as $field) {
+            $cmb_block_course_group->add_field($field);
+        }
+    }
 }

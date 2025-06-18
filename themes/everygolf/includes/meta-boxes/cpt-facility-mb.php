@@ -8,7 +8,7 @@ function everygolf_register_custom_fields_for_cpt_facility(): void
     $cmb_cpt_facility_group = new_cmb2_box(array(
         'id' => PREFIX_CMB_CPT_FACILITY . 'group',
         'title' => esc_html__('Khối: Thông tin bổ sung', 'everygolf'),
-        'object_types' => array('everygolf_facility'),
+        'object_types' => array('eg_facility'),
         'show_names' => true,
     ));
 

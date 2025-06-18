@@ -35,3 +35,22 @@ function everygolf_cmb_get_query($prefix_cmb, $post_type): WP_Query
 
     return new WP_Query( $args );
 }
+
+function everygolf_cmb_query_post_in($prefix_cmb, $post_type): ?WP_Query
+{
+    $ids = get_post_meta(get_the_ID(), $prefix_cmb . 'post_ids', true);
+
+    if (empty($ids) || !is_array($ids)) {
+        return null;
+    }
+
+    $args = array(
+        'post_type' => $post_type,
+        'post__in' => $ids,
+        'orderby' => 'post__in',
+        'posts_per_page' => -1,
+        'ignore_sticky_posts' => true,
+    );
+
+    return new WP_Query( $args );
+}

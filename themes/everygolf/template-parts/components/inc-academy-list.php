@@ -7,7 +7,7 @@ $text_link = get_post_meta(get_the_ID(), $prefix_cmb . 'text_link', true);
 $page_id = get_post_meta(get_the_ID(), $prefix_cmb . 'url', true);
 
 // query
-$query = everygolf_cmb_get_query($prefix_cmb, 'eg_setup_space');
+$query = everygolf_cmb_query_post_in($prefix_cmb, 'eg_setup_space');
 ?>
 <section class="section sec-HVCoso">
     <div class="container">

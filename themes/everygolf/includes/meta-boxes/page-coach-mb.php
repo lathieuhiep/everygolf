@@ -44,7 +44,7 @@ function everygolf_register_custom_fields_for_page_coach(): void
         [
             [
                 'name' => esc_html__('Tiêu đề', 'everygolf'),
-                'id' => PREFIX_CMB_PAGE_ACADEMY['cpt'] . 'title',
+                'id' => PREFIX_CMB_PAGE_COACH['tab_team'] . 'title',
                 'type' => 'text',
                 'sanitization_cb' => false,
                 'escape_cb' => false,
