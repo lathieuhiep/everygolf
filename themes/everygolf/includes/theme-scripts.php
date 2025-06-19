@@ -29,6 +29,19 @@ function everygolf_remove_wp_block_library_css(): void
 
 add_action('wp_enqueue_scripts', 'everygolf_remove_wp_block_library_css', 100);
 
+function custom_enqueue_jquery_first() {
+    if ( ! is_admin() ) {
+        // Xóa jQuery mặc định
+        wp_deregister_script( 'jquery' );
+        // Đăng ký lại jQuery, không có dependency nào, null version, ở footer
+        wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.min.js' ), array(), null, true );
+        // Enqueue jQuery ngay
+        wp_enqueue_script( 'jquery' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_jquery_first', 1 ); // PRIORITY = 1 → rất sớm
+
+
 // Enqueue scripts and styles
 function everygolf_enqueue_scripts(): void
 {
