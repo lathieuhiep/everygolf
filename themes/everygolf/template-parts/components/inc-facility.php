@@ -70,8 +70,8 @@ $query = everygolf_cmb_query_post_in($prefix_cmb, 'eg_facility');
                                                     <h3 class="accordion__title">
                                                         <?php echo esc_html( $item['title'] ); ?>
                                                         <span>
-                                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-up.svg' ) ) ?>" alt="">
-                                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-down.svg' ) ) ?>" alt="">
+                                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-up.svg' ) ) ?>" alt="" width="45" height="45">
+                                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-down.svg' ) ) ?>" alt="" width="45" height="45">
                                                         </span>
                                                     </h3>
 

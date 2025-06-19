@@ -106,7 +106,10 @@ $history_images_html = ob_get_clean();
                 <div class="f-line">
                     <span class="f-lineCenter"></span>
                     <div class="f-lineImg">
-                        <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/vector/aboutHistory-timeline.svg' ) ) ?>" alt="">
+                        <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/vector/aboutHistory-timeline.svg' ) ) ?>"
+                             width="588"
+                             height="45"
+                             alt="">
                     </div>
                 </div>
             </div>

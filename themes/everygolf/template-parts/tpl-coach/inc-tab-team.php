@@ -32,8 +32,8 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_coach');
 
                                         <h3 class="f-title uppercase">
                                             <span>
-                                                <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-up.svg' ) ) ?>" alt="">
-                                                <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-down.svg' ) ) ?>" alt="">
+                                                <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-up.svg' ) ) ?>" alt="" width="45" height="45">
+                                                <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/acc-down.svg' ) ) ?>" alt="" width="45" height="45">
                                             </span>
                                             <?php the_title(); ?>
                                         </h3>

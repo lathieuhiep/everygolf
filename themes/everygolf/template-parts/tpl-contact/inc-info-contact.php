@@ -27,7 +27,7 @@ $contact_form = get_post_meta( get_the_ID(), $prefix_cmb_contact_form . 'select_
                                 <?php if ( $phone ) : ?>
                                     <li>
                                         <a href="tel:<?php echo esc_attr( $phone ) ?>">
-                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/phone.svg' ) ) ?>" alt="">
+                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/phone.svg' ) ) ?>" alt="" width="25" height="25">
                                             <?php echo esc_html( $phone ) ?>
                                         </a>
                                     </li>
@@ -36,7 +36,7 @@ $contact_form = get_post_meta( get_the_ID(), $prefix_cmb_contact_form . 'select_
                                 <?php if ( $email ) : ?>
                                     <li>
                                         <a href="mailto:<?php echo esc_attr( $email ) ?>">
-                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/mail.svg' ) ) ?>" alt="">
+                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/mail.svg' ) ) ?>" alt="" width="25" height="25">
                                             <?php echo esc_html( $email ) ?>
                                         </a>
                                     </li>
@@ -45,7 +45,7 @@ $contact_form = get_post_meta( get_the_ID(), $prefix_cmb_contact_form . 'select_
                                 <?php if ( $website_url ) : ?>
                                     <li>
                                         <a href="<?php echo esc_url( $website_url ) ?>">
-                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/site.svg' ) ) ?>" alt="">
+                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/site.svg' ) ) ?>" alt="" width="25" height="25">
                                             <?php echo esc_html( $website_url ) ?>
                                         </a>
                                     </li>
@@ -54,7 +54,7 @@ $contact_form = get_post_meta( get_the_ID(), $prefix_cmb_contact_form . 'select_
                                 <?php if ( $facebook_url ) : ?>
                                     <li>
                                         <a href="<?php echo esc_url( $facebook_url ) ?>">
-                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/fb.svg' ) ) ?>" alt="">
+                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/fb.svg' ) ) ?>" alt="" width="25" height="25">
                                             <?php echo esc_html( $facebook_url ) ?>
                                         </a>
                                     </li>
