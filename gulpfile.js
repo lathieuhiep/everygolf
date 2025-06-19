@@ -138,65 +138,13 @@ function buildScripts() {
 }
 exports.buildScripts = buildScripts
 
-// js
-function buildJSTheme() {
-    return src([
-        `${paths.theme.js}*.js`
-    ], {allowEmpty: true})
-        .pipe(plumber({
-            errorHandler: function (err) {
-                console.error('Error in build js in theme:', err.message);
-                this.emit('end');
-            }
-        }))
-        .pipe(webpack({
-            mode: 'production',
-            output: {
-                filename: 'theme-main.min.js'
-            },
-            module: {
-                rules: [
-                    {
-                        test: /\.m?js$/,
-                        exclude: /node_modules/,
-                        use: {
-                            loader: 'babel-loader',
-                            options: {
-                                presets: ['@babel/preset-env']
-                            }
-                        }
-                    }
-                ]
-            },
-            resolve: {
-                extensions: ['.js']
-            },
-            optimization: {
-                minimize: true,
-                minimizer: [
-                    new TerserPlugin({
-                        extractComments: false,
-                        terserOptions: {
-                            format: {
-                                comments: false
-                            },
-                        },
-                    })
-                ]
-            }
-        }))
-        .pipe(dest(`${paths.output.theme.js}`))
-        .pipe(browserSync.stream())
-}
-exports.buildJSTheme = buildJSTheme
-
 // Task build all
 async function buildAll() {
     // theme
     await buildStyleTheme()
     await buildStylePageTemplate()
 
-    await buildJSTheme()
+    await buildScripts()
 }
 exports.buildAll = buildAll
 
@@ -219,6 +167,6 @@ function watchTask() {
     watch([
         `${paths.theme.js}*.js`,
         `${paths.theme.libs}**/*.js`
-    ], buildJSTheme)
+    ], buildScripts)
 }
 exports.watchTask = watchTask
