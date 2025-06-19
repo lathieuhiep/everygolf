@@ -1,8 +1,8 @@
-const gulp = require('gulp')
-const {src, dest, watch} = require('gulp')
+const {gulp, src, dest, watch} = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const sourcemaps = require('gulp-sourcemaps')
 const browserSync = require('browser-sync')
+const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
 const cleanCSS = require('gulp-clean-css')
 const rename = require("gulp-rename")
@@ -25,7 +25,8 @@ const paths = {
     node_modules: 'node_modules/',
     theme: {
         scss: 'src/theme/scss/',
-        js: 'src/theme/js/'
+        js: 'src/theme/js/',
+        libs: 'src/theme/libs/',
     },
     plugins: {
         root: 'src/plugins/',
@@ -64,7 +65,11 @@ function server() {
 // Task build theme
 // css
 function buildStyleTheme() {
-    return src(`${paths.theme.scss}main.scss`)
+    return src([
+        `${paths.theme.libs}fancyBox/fancybox.css`,
+        `${paths.theme.libs}swiper/swiper.min.css`,
+        `${paths.theme.scss}main.scss`
+    ])
         .pipe(plumber({
             errorHandler: function (err) {
                 console.error('SCSS Style Theme Error:', err.message);
@@ -76,6 +81,7 @@ function buildStyleTheme() {
             outputStyle: 'expanded',
             includePaths: ['node_modules']
         }, '').on('error', sass.logError))
+        .pipe(concat('bundle.css'))
 
         // --- Xuất file chưa min ---
         .pipe(dest(`${paths.output.theme.css}`))
@@ -87,6 +93,7 @@ function buildStyleTheme() {
         .pipe(dest(`${paths.output.theme.css}`))
         .pipe(browserSync.stream())
 }
+exports.buildStyleTheme = buildStyleTheme
 
 // style page templates
 function buildStylePageTemplate() {
@@ -109,6 +116,27 @@ function buildStylePageTemplate() {
         .pipe(dest(`${paths.output.theme.css}page-templates/`))
         .pipe(browserSync.stream())
 }
+
+// build scripts
+function buildScripts() {
+    return src([
+        `${paths.theme.libs}fancyBox/fancybox.umd.js`,
+        `${paths.theme.libs}greensock/GSAP.min.js`,
+        `${paths.theme.libs}greensock/ScrollTrigger.min.js`,
+        `${paths.theme.libs}greensock/SplitText.min.js`,
+        `${paths.theme.libs}greensock/TextPlugin.min.js`,
+        `${paths.theme.libs}headroom/headroom.js`,
+        `${paths.theme.libs}lenis/lenis.min.js`,
+        `${paths.theme.libs}mouse-follower/mouse-follower.min.js`,
+        `${paths.theme.libs}swiper/swiper.min.js`,
+        `${paths.theme.libs}wow/wow.min.js`,
+        `${paths.theme.js}functions.js`
+    ])
+        .pipe(concat('bundle.min.js')) // Nối tất cả lại thành một file tên là bundle.min.js
+        .pipe(uglify()) // Nén file (nếu dùng terser thì là .pipe(terser()))
+        .pipe(dest(`${paths.output.theme.js}`)); // Lưu file đã nối và nén vào thư mục dist/js
+}
+exports.buildScripts = buildScripts
 
 // js
 function buildJSTheme() {
@@ -160,6 +188,7 @@ function buildJSTheme() {
         .pipe(dest(`${paths.output.theme.js}`))
         .pipe(browserSync.stream())
 }
+exports.buildJSTheme = buildJSTheme
 
 // Task build all
 async function buildAll() {
@@ -167,7 +196,7 @@ async function buildAll() {
     await buildStyleTheme()
     await buildStylePageTemplate()
 
-    // await buildJSTheme()
+    await buildJSTheme()
 }
 exports.buildAll = buildAll
 
@@ -180,13 +209,16 @@ function watchTask() {
         `!${paths.theme.scss}page-templates/*.scss`,
         `!${paths.theme.scss}elementor-addons/*.scss`,
         `${paths.theme.scss}**/*.scss`,
-        `${paths.theme.scss}main.scss`,
+        `${paths.theme.scss}main.scss`
     ], buildStyleTheme)
 
     watch([
         `${paths.theme.scss}page-templates/*.scss`
     ], buildStylePageTemplate)
 
-    // watch([`${paths.theme.js}*.js`], buildJSTheme)
+    watch([
+        `${paths.theme.js}*.js`,
+        `${paths.theme.libs}**/*.js`
+    ], buildJSTheme)
 }
 exports.watchTask = watchTask

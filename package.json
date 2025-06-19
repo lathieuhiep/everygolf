@@ -26,5 +26,8 @@
     "sass": "^1.89.0",
     "terser-webpack-plugin": "^5.3.14",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
   }
 }
