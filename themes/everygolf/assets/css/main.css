@@ -13484,10 +13484,10 @@ textarea {
 .sec-HVVatChat .item__body .accordion__panel.active .accordion__title span img {
   object-fit: contain;
 }
-.sec-HVVatChat .item__body .accordion__panel.active .accordion__title span img:first-child {
+.sec-HVVatChat .item__body .accordion__panel.active .accordion__title span img.acc-up {
   display: none;
 }
-.sec-HVVatChat .item__body .accordion__panel.active .accordion__title span img:last-child {
+.sec-HVVatChat .item__body .accordion__panel.active .accordion__title span img.acc-down {
   display: block;
 }
 .sec-HVVatChat .item__body .accordion__title {
