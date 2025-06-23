@@ -26,7 +26,7 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_coach');
                             $galleries = get_post_meta(get_the_ID(), PREFIX_CMB_CPT_COACH . 'gallery_images', true);
                         ?>
                             <div class="accordion__panel wow fadeInUp<?php echo esc_attr( $stt_loop_query == 1 ? ' active show' : '' ); ?>">
-                                <div class="accordion__title">
+                                <div class="accordion__title" data-cursor-text="<?php esc_attr_e('View', 'everygolf'); ?>">
                                     <div class="f-group">
                                         <p class="f-sub"><?php echo esc_html( $position ); ?></p>
 

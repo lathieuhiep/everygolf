@@ -129,6 +129,11 @@ $mf-color-text:#fff !default;
             transform:scale(1.6);
             transition-duration:0.2s;
         }
+
+        .mf-cursor-text {
+            font-weight: 600;
+            color: var(--bs-heading-color);
+        }
     }
 
     &.-icon {

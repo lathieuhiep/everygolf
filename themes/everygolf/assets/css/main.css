@@ -11688,6 +11688,10 @@ textarea {
   transform: scale(1.6);
   transition-duration: 0.2s;
 }
+.mf-cursor.-text .mf-cursor-text {
+  font-weight: 600;
+  color: var(--bs-heading-color);
+}
 .mf-cursor.-icon:before {
   transform: scale(1.5);
 }
@@ -14065,6 +14069,11 @@ textarea {
   .sec-HLVCGia .accordion__title .f-group {
     padding: 2rem 0;
     padding-right: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .sec-HLVCGia .accordion__title:hover {
+    background-color: #181018;
   }
 }
 .sec-HLVCGia .accordion__body {

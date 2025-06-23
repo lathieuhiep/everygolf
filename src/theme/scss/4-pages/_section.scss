@@ -2888,6 +2888,12 @@
         padding-right: rem(80px);
       }
     }
+
+    @include media-breakpoint-up(xl) {
+      &:hover {
+        background-color: #181018;
+      }
+    }
   }
 
   .accordion__body {
