@@ -2157,11 +2157,11 @@
             img {
               object-fit: contain;
 
-              &:first-child {
+              &.acc-up {
                 display: none;
               }
 
-              &:last-child {
+              &.acc-down {
                 display: block;
               }
             }
