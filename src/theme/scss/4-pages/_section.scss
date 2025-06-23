@@ -2146,16 +2146,6 @@
     .accordion__panel {
       border-bottom: 1px solid rgba(#fff, .2);
 
-      .accordion__title {
-        img {
-          display: none;
-
-          &.acc-up {
-            display: block;
-          }
-        }
-      }
-
       &.active {
         .accordion__title {
           background: linear-gradient(90deg, #FFF 0%, #A5C857 100%);
@@ -2165,8 +2155,6 @@
 
           span {
             img {
-              object-fit: contain;
-
               &.acc-up {
                 display: none;
               }
@@ -2201,8 +2189,9 @@
 
         img {
           width: 100%;
+          object-fit: contain;
 
-          &:last-child {
+          &:not(.acc-up) {
             display: none;
           }
         }
