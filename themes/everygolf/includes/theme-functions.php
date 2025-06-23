@@ -98,3 +98,32 @@ function everygolf_get_form_cf7(): array {
 
     return $options;
 }
+
+// check spam cf7
+if ( function_exists('wpcf7') ) {
+    function everygolf_check_spam_form_cf7($html): string {
+        ob_start();
+    ?>
+        <div class="d-none">
+            <input class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="spam-email" aria-label="">
+        </div>
+    <?php
+        $content = ob_get_contents();
+        ob_end_clean();
+        return $html . $content;
+    }
+    add_filter('wpcf7_form_elements', 'everygolf_check_spam_form_cf7');
+
+    function everygolf_check_spam_form_cf7_valid($posted_data) {
+        $submission = WPCF7_Submission::get_instance();
+        $note_text = esc_html__('Đã có lỗi xảy ra', 'everygolf');
+
+        if ( !empty($posted_data['spam-email']) || !isset($_POST['spam-email'])) {
+            $submission->set_status( 'spam' );
+            $submission->set_response( $note_text );
+        }
+        unset($posted_data['spam-email']);
+        return $posted_data;
+    }
+    add_action('wpcf7_posted_data', 'everygolf_check_spam_form_cf7_valid');
+}
