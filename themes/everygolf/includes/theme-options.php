@@ -24,11 +24,7 @@ if ( class_exists( 'CSF' ) ) {
         'menu_position'       => 2,
         'admin_bar_menu_icon' => 'dashicons-admin-generic',
         'framework_title'     => $menu_title,
-        'footer_text'         => esc_html__( 'Cảm ơn bạn đã sử dụng theme của tôi', 'everygolf' ),
-        'footer_after'        => sprintf(
-            '<pre>Liên hệ:<br />Zalo/Phone: 0975458209 - Skype: lathieuhiep - facebook: <a href="%s" target="_blank">lathieuhiep</a></pre>',
-            $facebook_url
-        ),
+        'footer_text'         => esc_html__( 'Cảm ơn bạn đã sử dụng theme của tôi', 'everygolf' )
     ) );
 
     // general options
