@@ -13479,6 +13479,12 @@ textarea {
 .sec-HVVatChat .item__body .accordion__panel {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.sec-HVVatChat .item__body .accordion__panel .accordion__title img {
+  display: none;
+}
+.sec-HVVatChat .item__body .accordion__panel .accordion__title img.acc-up {
+  display: block;
+}
 .sec-HVVatChat .item__body .accordion__panel.active .accordion__title {
   background: linear-gradient(90deg, #FFF 0%, #A5C857 100%);
   background-clip: text;
