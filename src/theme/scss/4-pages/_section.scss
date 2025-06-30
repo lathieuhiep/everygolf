@@ -3987,16 +3987,15 @@
         li {
           padding: rem(5px) 0;
 
+          img {
+            width: rem(18px);
+            margin-right: rem(8px);
+          }
+
           a {
             font-size: rem(12px);
             font-weight: 600;
             color: #fff;
-
-            img {
-              width: rem(18px);
-              margin-right: rem(8px);
-            }
-            
 
             &:hover {
               text-decoration: underline;
@@ -4033,13 +4032,13 @@
             width: 50%;
             padding: rem(7px) 0;
 
+            img {
+              width: rem(20px);
+              margin-right: rem(6px);
+            }
+
             a {
               font-size: rem(12px);
-
-              img {
-                width: rem(20px);
-                margin-right: rem(6px);
-              }
             }
           }
         }
@@ -4068,13 +4067,13 @@
           li {
             padding: rem(10px) 0;
 
+            img {
+              width: rem(25px);
+              margin-right: rem(12px);
+            }
+
             a {
               font-size: rem(18px);
-
-              img {
-                width: rem(25px);
-                margin-right: rem(12px);
-              }
             }
           }
         }

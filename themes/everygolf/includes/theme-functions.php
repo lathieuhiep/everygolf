@@ -127,3 +127,14 @@ if ( function_exists('wpcf7') ) {
     }
     add_action('wpcf7_posted_data', 'everygolf_check_spam_form_cf7_valid');
 }
+
+// replace number
+function everygolf_preg_replace_ony_number( $string ): string|null {
+    $number = '';
+
+    if ( ! empty( $string ) ) {
+        $number = preg_replace( '/[^0-9]/', '', strip_tags( $string ) );
+    }
+
+    return $number;
+}

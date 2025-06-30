@@ -25,10 +25,13 @@ function everygolf_cmb_block_contact_info(
         'name' => esc_html__('Điện thoại', 'everygolf'),
         'id'   => $prefix . 'phone',
         'type' => 'text',
-        'default' => '+84 868 336 368',
+        'repeatable' => true,
         'attributes' => array(
             'placeholder' => esc_html__('Ví dụ: +84 868 336 368', 'everygolf'),
         ),
+        'options' => [
+            'add_row_text' => esc_html__('Thêm', 'everygolf'),
+        ],
     ) );
 
     $cmb_block_contact_info_group->add_field( array(

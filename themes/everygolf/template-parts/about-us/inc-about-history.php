@@ -14,7 +14,7 @@ foreach ( $histories as $index => $history ) :
 
         <?php if ( !empty($history['img_thumbnail_id']) ) : ?>
             <div class="h-img2">
-                <?php echo wp_get_attachment_image( $history['img_thumbnail_id'] ); ?>
+                <?php echo wp_get_attachment_image( $history['img_thumbnail_id'], 'medium' ); ?>
             </div>
         <?php endif; ?>
     </div>

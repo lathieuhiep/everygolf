@@ -5782,6 +5782,7 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -14957,14 +14958,14 @@ textarea {
 .sec-lienhePage .item-contact .c-info ul li {
   padding: 0.3125rem 0;
 }
+.sec-lienhePage .item-contact .c-info ul li img {
+  width: 1.125rem;
+  margin-right: 0.5rem;
+}
 .sec-lienhePage .item-contact .c-info ul li a {
   font-size: 0.75rem;
   font-weight: 600;
   color: #fff;
-}
-.sec-lienhePage .item-contact .c-info ul li a img {
-  width: 1.125rem;
-  margin-right: 0.5rem;
 }
 .sec-lienhePage .item-contact .c-info ul li a:hover {
   text-decoration: underline;
@@ -14993,12 +14994,12 @@ textarea {
     width: 50%;
     padding: 0.4375rem 0;
   }
-  .sec-lienhePage .item-contact .c-info ul li a {
-    font-size: 0.75rem;
-  }
-  .sec-lienhePage .item-contact .c-info ul li a img {
+  .sec-lienhePage .item-contact .c-info ul li img {
     width: 1.25rem;
     margin-right: 0.375rem;
+  }
+  .sec-lienhePage .item-contact .c-info ul li a {
+    font-size: 0.75rem;
   }
   .sec-lienhePage .item-contact .c-body {
     padding: 2.5rem 1.875rem;
@@ -15019,12 +15020,12 @@ textarea {
   .sec-lienhePage .item-contact .c-info ul li {
     padding: 0.625rem 0;
   }
-  .sec-lienhePage .item-contact .c-info ul li a {
-    font-size: 1.125rem;
-  }
-  .sec-lienhePage .item-contact .c-info ul li a img {
+  .sec-lienhePage .item-contact .c-info ul li img {
     width: 1.5625rem;
     margin-right: 0.75rem;
+  }
+  .sec-lienhePage .item-contact .c-info ul li a {
+    font-size: 1.125rem;
   }
   .sec-lienhePage .item-contact .c-body {
     min-height: 100%;

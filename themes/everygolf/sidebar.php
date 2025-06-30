@@ -8,11 +8,7 @@
 
         <div class="item-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 offset-xl-3">
-                        <?php dynamic_sidebar( 'sidebar-cta' ); ?>
-                    </div>
-                </div>
+                <?php dynamic_sidebar( 'sidebar-cta' ); ?>
             </div>
         </div>
     </div>

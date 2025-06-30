@@ -3,7 +3,7 @@ if ( empty( $args ) ) return;
 $prefix_cmb_contact_info = $args['prefix_cmb_contact_info'];
 $prefix_cmb_contact_form = $args['prefix_cmb_contact_form'];
 
-$phone = get_post_meta( get_the_ID(), $prefix_cmb_contact_info . 'phone', true );
+$phones = get_post_meta( get_the_ID(), $prefix_cmb_contact_info . 'phone', true );
 $email = get_post_meta( get_the_ID(), $prefix_cmb_contact_info . 'email', true );
 $website_url = get_post_meta( get_the_ID(), $prefix_cmb_contact_info . 'website_url', true );
 $facebook_url = get_post_meta( get_the_ID(), $prefix_cmb_contact_info . 'facebook_url', true );
@@ -24,12 +24,17 @@ $contact_form = get_post_meta( get_the_ID(), $prefix_cmb_contact_form . 'select_
 
                         <div class="c-info">
                             <ul>
-                                <?php if ( $phone ) : ?>
-                                    <li>
-                                        <a href="tel:<?php echo esc_attr( $phone ) ?>">
-                                            <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/phone.svg' ) ) ?>" alt="" width="25" height="25">
-                                            <?php echo esc_html( $phone ) ?>
-                                        </a>
+                                <?php if ( $phones ) : ?>
+                                    <li class="d-flex">
+                                        <img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/icons/phone.svg' ) ) ?>" alt="" width="25" height="25">
+
+                                        <div class="phone-list d-flex flex-column flex-fill">
+                                            <?php foreach ($phones as $phone ): ?>
+                                                <a href="tel:<?php echo esc_attr( everygolf_preg_replace_ony_number($phone) ); ?>">
+                                                    <?php echo esc_html( $phone ); ?>
+                                                </a>
+                                            <?php endforeach; ?>
+                                        </div>
                                     </li>
                                 <?php endif; ?>
 
