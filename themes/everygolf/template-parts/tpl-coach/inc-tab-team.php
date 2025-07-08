@@ -82,17 +82,19 @@ $query = everygolf_cmb_get_query($prefix_cmb, 'everygolf_coach');
                                                     </div>
 
                                                     <?php if ( $galleries ) : ?>
-                                                        <ul class="t-listCC">
-                                                            <?php foreach ( $galleries as $attachment_id => $attachment_url  ) : ?>
-                                                                <li>
-                                                                    <a href="<?php echo esc_url( $attachment_url ) ?>"
-                                                                       data-fancybox="<?php esc_attr_e( 'chung-chi-', 'everygolf' ); echo esc_attr( $stt_loop_query ); ?>"
-                                                                    >
-                                                                        <?php echo wp_get_attachment_image($attachment_id, 'medium'); ?>
-                                                                    </a>
-                                                                </li>
-                                                            <?php endforeach; ?>
-                                                        </ul>
+                                                        <div class="t-listCC">
+                                                            <div class="swiper">
+                                                                <div class="swiper-wrapper">
+                                                                    <?php foreach ( $galleries as $attachment_id => $attachment_url  ) : ?>
+                                                                        <div class="swiper-slide">
+                                                                            <a href="<?php echo esc_url( $attachment_url ) ?>" data-fancybox="<?php esc_attr_e( 'chung-chi-', 'everygolf' ); echo esc_attr( $stt_loop_query ); ?>">
+                                                                                <?php echo wp_get_attachment_image($attachment_id, 'medium'); ?>
+                                                                            </a>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     <?php endif; ?>
 
                                                     <span class="f-num d-none d-xl-block"><?php echo esc_html(str_pad(($stt_loop_query), 2, '0', STR_PAD_LEFT)); ?></span>

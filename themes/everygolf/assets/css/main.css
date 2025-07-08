@@ -12218,6 +12218,14 @@ textarea {
 .sec-homeDoiNgu .title-wrap {
   margin-bottom: 1.875rem;
 }
+.sec-homeDoiNgu .title-text {
+  max-height: 14rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+}
 @media (min-width: 768px) {
   .sec-homeDoiNgu .title-wrap {
     margin-bottom: 2.5rem;

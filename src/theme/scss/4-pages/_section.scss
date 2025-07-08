@@ -564,6 +564,15 @@
     margin-bottom: rem(30px);
   }
 
+  .title-text {
+    max-height: 14rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+  }
+
   @include media-breakpoint-up(md) {
     .title-wrap {
       margin-bottom: rem(40px);

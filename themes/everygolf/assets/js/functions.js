@@ -1181,6 +1181,40 @@
         }
     }
 
+    function HLVCGiaJs() {
+        const wrap = $('.sec-HLVCGia');
+        if( wrap.length ) {
+            const list = wrap.find('.t-listCC');
+
+            list.each(function() {
+                const self = $(this);
+                const slideDom = self.find('.swiper');
+                const countSlides = self.find('.swiper-slide').length;
+                const slidesView = countSlides < 3 ? countSlides : 3;
+
+                const slide = new Swiper(slideDom[0], {
+                    slidesPerView: slidesView,
+                    spaceBetween: 8,
+                    speed: 700,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: slidesView,
+                            spaceBetween: 14,
+                        },
+                        1200: {
+                            slidesPerView: slidesView,
+                            spaceBetween: 20,
+                        },
+
+                        1700: {
+                            slidesPerView: slidesView,
+                            spaceBetween: 40,
+                        },
+                    }
+                });
+            });
+        }
+    }
 
     wowReponsiveJs()
     dataImageMobileUrl();
@@ -1206,6 +1240,7 @@
         dataStickyFix();
         counterJs();
         aboutDoiTac();
+        HLVCGiaJs();
         if( ww > 1199 ) {
             const cursor = new MouseFollower();
         }
