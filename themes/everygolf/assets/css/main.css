@@ -14379,9 +14379,8 @@ textarea {
 .khoahocBox__content .kh-item__title .t-title {
   font-family: var(--bs-body-font-family);
   font-size: 1.875rem;
-  font-weight: 600;
+  font-weight: bold;
   color: #FFF;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-bottom: 0.9375rem;
 }
