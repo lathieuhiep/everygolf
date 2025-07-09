@@ -29,14 +29,15 @@
 
     h2 {
       display: inline-block;
+      font-family: var(--bs-body-font-family);
+      font-size: rem(28px);
+      font-weight: bold;
       text-align: center;
       text-transform: uppercase;
-      font-size: rem(28px);
       background: linear-gradient(90deg, #FFF 0%, #A5C857 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 0;
       padding-top: 0.03em;
       margin-bottom: -0.6em;
     }
@@ -3159,6 +3160,7 @@
   }
 
   .f-left__title {
+    font-family: var(--bs-body-font-family);
     font-size: rem(20px);
     font-weight: 600;
     color: #fff; 
