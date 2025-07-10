@@ -3163,7 +3163,7 @@
     font-family: var(--bs-body-font-family);
     font-size: rem(20px);
     font-weight: 600;
-    color: #fff; 
+    color: #fff;
     margin: 0;
   }
 
@@ -3266,7 +3266,7 @@
     .t-title {
       font-family: var(--bs-body-font-family);
       font-size: rem(30px);
-      font-weight: bold;
+      font-weight: 600;
       color: #FFF;
       text-transform: uppercase;
       margin-bottom: rem(15px);
@@ -3356,9 +3356,9 @@
     }
 
     .l-title {
+      font-family: var(--bs-body-font-family);
       font-size: rem(20px);
       font-weight: 600;
-      letter-spacing: -0.02em;
       text-transform: uppercase;
       color: #fff;
       margin-bottom: rem(20px);
@@ -3372,6 +3372,7 @@
 
     .l-text {
       width: 60%;
+      font-weight: 700;
       letter-spacing: -0.01em;
       color: #fff;
       margin: 0;
@@ -3445,7 +3446,7 @@
       .l-item {
         padding: rem(30px) 0;
       }
-      
+
       .l-title {
         font-size: rem(32px);
         margin-bottom: rem(29px);

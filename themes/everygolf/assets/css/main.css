@@ -14381,7 +14381,7 @@ textarea {
 .khoahocBox__content .kh-item__title .t-title {
   font-family: var(--bs-body-font-family);
   font-size: 1.875rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #FFF;
   text-transform: uppercase;
   margin-bottom: 0.9375rem;
@@ -14457,9 +14457,9 @@ textarea {
   padding-top: 0 !important;
 }
 .khoahocBox__content .kh-item__list .l-title {
+  font-family: var(--bs-body-font-family);
   font-size: 1.25rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 1.25rem;
@@ -14471,6 +14471,7 @@ textarea {
 }
 .khoahocBox__content .kh-item__list .l-text {
   width: 60%;
+  font-weight: 700;
   letter-spacing: -0.01em;
   color: #fff;
   margin: 0;
