@@ -5830,8 +5830,10 @@ i {
 }
 
 .wp-caption-text {
+  margin-top: 0.4rem;
   font-size: 0.9em;
-  color: #555;
+  color: #fff;
+  font-style: italic;
 }
 
 /* Sticky post */
