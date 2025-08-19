@@ -29,7 +29,8 @@ function everygolf_remove_wp_block_library_css(): void
 
 add_action('wp_enqueue_scripts', 'everygolf_remove_wp_block_library_css', 100);
 
-function custom_enqueue_jquery_first() {
+function custom_enqueue_jquery_first(): void
+{
     if ( ! is_admin() ) {
         // deregister the default jQuery
         wp_deregister_script( 'jquery' );
