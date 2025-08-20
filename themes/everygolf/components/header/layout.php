@@ -18,11 +18,7 @@ endif;
             <?php get_template_part('components/header/logo'); ?>
 
             <!-- Main Menu -->
-            <?php
-            if ( !wp_is_mobile() ) :
-                get_template_part('components/header/nav');
-            endif;
-            ?>
+            <?php get_template_part('components/header/nav'); ?>
 
             <div class="header__grow"></div>
 
@@ -59,8 +55,4 @@ endif;
 </header>
 
 <!-- Mobile Menu -->
-<?php
-if ( wp_is_mobile() ) :
-    get_template_part('components/header/nav', 'mobile');
-endif;
-?>
+<?php get_template_part('components/header/nav', 'mobile'); ?>
